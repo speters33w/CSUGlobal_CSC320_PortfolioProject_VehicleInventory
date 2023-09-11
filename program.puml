@@ -9,7 +9,6 @@ class edu.csuglobal.AutomobileInventory {
 + AutomobileInventory addAutomobile(AutomobileInventory,Automobile)
 + ArrayList<Automobile> addAutomobile(Scanner,ArrayList<Automobile>)
 + boolean duplicateVin(String,ArrayList<Automobile>)
-~ void AddVin(String)
 ~ Automobile addMake(Scanner,Automobile)
 ~ Automobile addModel(Scanner,Automobile)
 ~ Automobile addColor(Scanner,Automobile)

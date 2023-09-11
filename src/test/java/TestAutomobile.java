@@ -4,6 +4,8 @@ import edu.csuglobal.AutomobileInventory;
 import java.time.Year;
 import java.util.Scanner;
 
+import static util.speters33w.ANSIColor.color;
+
 /*
 1. Create an additional class to call your automobile class (e.g., Main or AutomobileInventory).
       Include a try...catch construct and print it to the console any errors.
@@ -61,10 +63,21 @@ public class TestAutomobile {
         System.out.println("\nCall the list method and print the new vehicle information to the screen.");
         automobileInventory.listInventory(input, automobileInventory.getInventory());
 
-        System.out.println("\nUpdate the vehicle."); // todo create a menu and implement
-        automobileInventory.updateAutomobile(input, automobileInventory.getInventory()); //todo add VIN implementation.
+        System.out.println("\nUpdate the vehicle.");
+        System.out.printf("%nThe current vehicle VIN is %s%s%s%n",
+                color("green"), automobileInventory.getInventory().get(0).getVin(), color("reset"));
+        automobileInventory.updateAutomobile(input, automobileInventory.getInventory());
 
-        // Print the return value.
+        System.out.println("\nPrint the return value.");
+        automobileInventory.listInventory(input, automobileInventory.getInventory());
+
+        System.out.println("\nDisplay a message asking if the user wants to print the information to a file (Y or N).");
+        System.out.println("    a. Use a scanner to capture the response. " +
+                           "If “Y”, print the file to a predefined location." +
+                           "\n       (e.g., /user.dir/automobileInventory.adb). " +
+                           "Note: you may want to create a method to print the information in the main class.");
+        System.out.println("    b. If “N”, indicate that a file will not be printed.\n");
+        automobileInventory.quit(input, automobileInventory.getInventory());
 
 
         input.close();

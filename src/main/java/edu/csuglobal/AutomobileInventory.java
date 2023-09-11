@@ -233,20 +233,12 @@ public class AutomobileInventory {
         return false;
     }
 
-    //todo move to updateAutomobile()
-    void AddVin(String customerSupport) {
-        System.out.print("The VIN may not be altered after Automobile record creation.\n" +
-                         "If the VIN is invalid, create a new record with the correct vin, " +
-                         "and delete the record with the incorrect vin.\n" +
-                         "You may contact customer support at " + customerSupport + ".\n");
-    }
-
     /**
      * Adds or updates the make of an automobile object.
      * Prompts the user for a valid make from the automobile makesList.
      * Suggests close matches if the user input does not match any of the automobile makes.
      * Allows the user to override valid makes for makes not in the database,
-     *     and appends an asterisk to the make for database review.
+     * and appends an asterisk to the make for database review.
      *
      * @param input      Scanner for user input.
      * @param automobile the automobile object to be updated.
@@ -440,7 +432,7 @@ public class AutomobileInventory {
     /**
      * Removes an automobile from the automobile inventory using the VIN.
      * Iterates through the automobile inventory until the VIN is found,
-     *     then removes the automobile from the inventory.
+     * then removes the automobile from the inventory.
      * If the inventory does not contain the VIN, it prints an error message to the console.
      *
      * @param inventory the automobile inventory
@@ -465,8 +457,85 @@ public class AutomobileInventory {
         return inventory;
     }
 
+    /**
+     * Allows the user to update an automobile currently in the database.
+     * Prompts the user to select an automobile from the automobile inventory using the VIN.
+     * Loops through the automobile inventory until the automobile is found.
+     * If the automobile is not found, it prints an error message to the console and returns to the main menu.
+     * If the automobile is found, it displays a menu with options to update the automobile.
+     * Then it returns the updated automobile inventory.
+     *
+     * @param input     Scanner for user input.
+     * @param inventory the automobile inventory.
+     * @return the updated automobile inventory
+     */
     public ArrayList<Automobile> updateAutomobile(Scanner input, ArrayList<Automobile> inventory) {
-        //todo create a menu and implement
+        String customerSupport = "1-800-555-7836 (1-800-555-RTFM)";
+        Automobile automobile = new Automobile();
+        System.out.print("Enter the VIN of the automobile to be updated: ");
+        String vin = input.nextLine().toUpperCase();
+        for (Automobile element : inventory) {
+            if (element.getVin().equalsIgnoreCase(vin)) {
+                System.out.printf("%sAutomobile found: %s.%s%n",
+                        color("cyan"), element, color("reset"));
+                automobile = element;
+                break;
+            }
+            System.out.printf("%sCould not find automobile with VIN %s.%s%n",
+                    color("red"), vin, color("reset"));
+            menu(input, inventory);
+        }
+
+        System.out.printf("%sPlease select an option:%s%n", color("reset"), color("reset"));
+        System.out.printf("%sUpdate the [V]in of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%sUpdate the [B]rand of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%sUpdate the [M]odel of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%sUpdate the [C]olor of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%sUpdate the [Y]ear of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%sUpdate the [O]dometer of an automobile%s%n", color("green"), color("reset"));
+        System.out.printf("%s[X] to cancel%s%n", color("green"), color("reset"));
+        System.out.print("Enter an option: ");
+        String option = input.nextLine();
+        if (!option.isEmpty()) {
+            option = option.substring(0, 1).toUpperCase();
+        } else {
+            updateAutomobile(input, inventory);
+        }
+        switch (option) {
+            case "V":
+                System.out.print("The VIN may not be altered after inventory record creation.\n" +
+                                 "If the VIN is invalid, create a new record with the correct vin, " +
+                                 "and delete the record with the incorrect vin.\n" +
+                                 "You may contact customer support at " + customerSupport + ".\n");
+                menu(input, inventory);
+                break;
+            case "B":
+                automobile = addMake(input, automobile);
+                break;
+            case "M":
+                automobile = addModel(input, automobile);
+                break;
+            case "C":
+                automobile = addColor(input, automobile);
+                break;
+            case "Y":
+                automobile = addYear(input, automobile);
+                break;
+            case "O":
+                automobile = addMileage(input, automobile);
+                break;
+            case "X":
+                menu(input, inventory);
+                break;
+            default:
+                System.out.printf("%sInvalid option, please try again.%s%n", color("red"), color("reset"));
+                System.out.print("\nType any key to continue: ");
+                input.nextLine();
+                updateAutomobile(input, inventory);
+                break;
+        }
+        System.out.printf("%sSuccessfully updated %s.%s%n",
+                color("cyan"), automobile, color("reset"));
         return inventory;
     }
 
@@ -574,7 +643,7 @@ public class AutomobileInventory {
      * Saves the automobile inventory.
      * This will overwrite the existing default database file.
      * In the case of an exception, it will print an error message to the console,
-     *     and a list of the current inventory for possible salvage from the console log.
+     * and a list of the current inventory for possible salvage from the console log.
      *
      * @param input     Scanner to pass to listInventory in the case of an exception.
      * @param inventory the Automobile inventory.
@@ -615,7 +684,7 @@ public class AutomobileInventory {
      * if yes, saves the inventory, then quits the program if yes or no.
      * If the entry does not begin with y or n, it will print an error message to the console and restart the method.
      * There is no &quot;do you really want to quit?&quot; message,
-     *     user can re-run the program after quitting in error.
+     * user can re-run the program after quitting in error.
      *
      * @param input     Scanner used to prompt the user for input.
      * @param inventory the modified Automobile inventory.
@@ -630,6 +699,9 @@ public class AutomobileInventory {
                     saveInventory(input, inventory);
                     break;
                 } else if (yesNo.equalsIgnoreCase("n")) {
+                    System.out.printf("%sThe current inventory was not saved.%n" +
+                                      "All edits are lost.%s%n",
+                            color("red"), color("reset"));
                     break;
                 }
             }
