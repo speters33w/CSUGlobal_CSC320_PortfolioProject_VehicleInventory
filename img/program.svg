@@ -1,1 +1,935 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="611px" preserveAspectRatio="none" style="width:1044px;height:611px;background:#FFFFFF;" version="1.1" viewBox="0 0 1044 611" width="1044px" zoomAndPan="magnify"><defs/><g><!--cluster edu--><g id="cluster_edu"><path d="M8.5,6.0137 L36.5,6.0137 A3.75,3.75 0 0 1 39,8.5137 L46,30.6348 L1034.5,30.6348 A2.5,2.5 0 0 1 1037,33.1348 L1037,601.5137 A2.5,2.5 0 0 1 1034.5,604.0137 L8.5,604.0137 A2.5,2.5 0 0 1 6,601.5137 L6,8.5137 A2.5,2.5 0 0 1 8.5,6.0137 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="46" y1="30.6348" y2="30.6348"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="27" x="10" y="23.1211">edu</text></g><!--cluster csuglobal--><g id="cluster_csuglobal"><path d="M32.5,51.0137 L101.5,51.0137 A3.75,3.75 0 0 1 104,53.5137 L111,75.6348 L1010.5,75.6348 A2.5,2.5 0 0 1 1013,78.1348 L1013,577.5137 A2.5,2.5 0 0 1 1010.5,580.0137 L32.5,580.0137 A2.5,2.5 0 0 1 30,577.5137 L30,53.5137 A2.5,2.5 0 0 1 32.5,51.0137 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="111" y1="75.6348" y2="75.6348"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="34" y="68.1211">csuglobal</text></g><!--class AutomobileInventory--><g id="elem_AutomobileInventory"><rect codeLine="1" fill="#F1F1F1" height="476.2852" id="AutomobileInventory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="533" x="463.5" y="88.0137"/><ellipse cx="661.75" cy="104.0137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M664.5156,99.8887 Q664.6719,99.6699 664.8594,99.5605 Q665.0469,99.4512 665.2656,99.4512 Q665.6406,99.4512 665.875,99.7168 Q666.1094,99.9668 666.1094,100.5762 L666.1094,102.0293 Q666.1094,102.6387 665.875,102.9043 Q665.6406,103.1699 665.2656,103.1699 Q664.9219,103.1699 664.7188,102.9668 Q664.5156,102.7793 664.4063,102.2637 Q664.3594,101.9043 664.1719,101.7168 Q663.8438,101.3418 663.2344,101.123 Q662.625,100.9043 662,100.9043 Q661.2344,100.9043 660.5938,101.2324 Q659.9688,101.5605 659.4688,102.3105 Q658.9844,103.0605 658.9844,104.0918 L658.9844,105.1855 Q658.9844,106.4199 659.875,107.248 Q660.7656,108.0605 662.3594,108.0605 Q663.2969,108.0605 663.9531,107.8105 Q664.3438,107.6543 664.7656,107.2168 Q665.0313,106.9512 665.1719,106.873 Q665.3281,106.7949 665.5313,106.7949 Q665.8594,106.7949 666.1094,107.0605 Q666.375,107.3105 666.375,107.6543 Q666.375,107.998 666.0313,108.4043 Q665.5313,108.9824 664.7344,109.3105 Q663.6563,109.7637 662.3594,109.7637 Q660.8438,109.7637 659.6406,109.1387 Q658.6563,108.6387 657.9688,107.5762 Q657.2813,106.498 657.2813,105.2168 L657.2813,104.0605 Q657.2813,102.7324 657.8906,101.5918 Q658.5156,100.4355 659.6094,99.8262 Q660.7031,99.2012 661.9375,99.2012 Q662.6719,99.2012 663.3125,99.373 Q663.9688,99.5293 664.5156,99.8887 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="682.25" y="109.8105">AutomobileInventory</text><line style="stroke:#181818;stroke-width:0.5;" x1="464.5" x2="995.5" y1="120.0137" y2="120.0137"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="471.5" y="131.8242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="483.5" y="139.1211">ArrayList&lt;Automobile&gt; inventory</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="471.5" y="150.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="483.5" y="157.7422">String makesList</text><polygon fill="none" points="474.5,168.0664,470.5,174.0664,478.5,174.0664" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="483.5" y="176.3633">boolean overrideMake</text><line style="stroke:#181818;stroke-width:0.5;" x1="464.5" x2="995.5" y1="183.877" y2="183.877"/><ellipse cx="474.5" cy="198.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="483.5" y="202.9844">ArrayList&lt;Automobile&gt; getInventory()</text><ellipse cx="474.5" cy="217.3086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="483.5" y="221.6055">void menu(Scanner,ArrayList&lt;Automobile&gt;)</text><polygon fill="#4177AF" points="474.5,231.9297,470.5,237.9297,478.5,237.9297" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="483.5" y="240.2266">List&lt;String&gt; importMakesList()</text><ellipse cx="474.5" cy="254.5508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="438" x="483.5" y="258.8477">AutomobileInventory addAutomobile(AutomobileInventory,Automobile)</text><ellipse cx="474.5" cy="273.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="449" x="483.5" y="277.4688">ArrayList&lt;Automobile&gt; addAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="291.793" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="325" x="483.5" y="296.0898">boolean duplicateVin(String,ArrayList&lt;Automobile&gt;)</text><polygon fill="#4177AF" points="474.5,306.4141,470.5,312.4141,478.5,312.4141" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="483.5" y="314.7109">Automobile addMake(Scanner,Automobile)</text><polygon fill="#4177AF" points="474.5,325.0352,470.5,331.0352,478.5,331.0352" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="483.5" y="333.332">Automobile addModel(Scanner,Automobile)</text><polygon fill="#4177AF" points="474.5,343.6563,470.5,349.6563,478.5,349.6563" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="483.5" y="351.9531">Automobile addColor(Scanner,Automobile)</text><polygon fill="#4177AF" points="474.5,362.2773,470.5,368.2773,478.5,368.2773" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="483.5" y="370.5742">Automobile addYear(Scanner,Automobile)</text><polygon fill="#4177AF" points="474.5,380.8984,470.5,386.8984,478.5,386.8984" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="483.5" y="389.1953">Automobile addMileage(Scanner,Automobile)</text><ellipse cx="474.5" cy="403.5195" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="472" x="483.5" y="407.8164">ArrayList&lt;Automobile&gt; removeAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="422.1406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="456" x="483.5" y="426.4375">ArrayList&lt;Automobile&gt; removeAutomobile(ArrayList&lt;Automobile&gt;,String)</text><ellipse cx="474.5" cy="440.7617" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="469" x="483.5" y="445.0586">ArrayList&lt;Automobile&gt; updateAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="459.3828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="507" x="483.5" y="463.6797">ArrayList&lt;Automobile&gt; importInventory(Scanner,ArrayList&lt;Automobile&gt;,boolean)</text><ellipse cx="474.5" cy="478.0039" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="333" x="483.5" y="482.3008">String[] listInventory(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="496.625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="327" x="483.5" y="500.9219">void saveInventory(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="515.2461" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="483.5" y="519.543">void quit(Scanner,ArrayList&lt;Automobile&gt;)</text><ellipse cx="474.5" cy="533.8672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="167" x="483.5" y="538.1641">void automobileInventory()</text><ellipse cx="474.5" cy="552.4883" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="115" x="483.5" y="556.7852">void main(String[])</text></g><!--class Automobile--><g id="elem_Automobile"><rect codeLine="26" fill="#F1F1F1" height="476.2852" id="Automobile" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="382" x="46" y="88.0137"/><ellipse cx="197.75" cy="104.0137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M200.5156,99.8887 Q200.6719,99.6699 200.8594,99.5605 Q201.0469,99.4512 201.2656,99.4512 Q201.6406,99.4512 201.875,99.7168 Q202.1094,99.9668 202.1094,100.5762 L202.1094,102.0293 Q202.1094,102.6387 201.875,102.9043 Q201.6406,103.1699 201.2656,103.1699 Q200.9219,103.1699 200.7188,102.9668 Q200.5156,102.7793 200.4063,102.2637 Q200.3594,101.9043 200.1719,101.7168 Q199.8438,101.3418 199.2344,101.123 Q198.625,100.9043 198,100.9043 Q197.2344,100.9043 196.5938,101.2324 Q195.9688,101.5605 195.4688,102.3105 Q194.9844,103.0605 194.9844,104.0918 L194.9844,105.1855 Q194.9844,106.4199 195.875,107.248 Q196.7656,108.0605 198.3594,108.0605 Q199.2969,108.0605 199.9531,107.8105 Q200.3438,107.6543 200.7656,107.2168 Q201.0313,106.9512 201.1719,106.873 Q201.3281,106.7949 201.5313,106.7949 Q201.8594,106.7949 202.1094,107.0605 Q202.375,107.3105 202.375,107.6543 Q202.375,107.998 202.0313,108.4043 Q201.5313,108.9824 200.7344,109.3105 Q199.6563,109.7637 198.3594,109.7637 Q196.8438,109.7637 195.6406,109.1387 Q194.6563,108.6387 193.9688,107.5762 Q193.2813,106.498 193.2813,105.2168 L193.2813,104.0605 Q193.2813,102.7324 193.8906,101.5918 Q194.5156,100.4355 195.6094,99.8262 Q196.7031,99.2012 197.9375,99.2012 Q198.6719,99.2012 199.3125,99.373 Q199.9688,99.5293 200.5156,99.8887 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="218.25" y="109.8105">Automobile</text><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="427" y1="120.0137" y2="120.0137"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="131.8242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="66" y="139.1211">String vin</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="150.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="66" y="157.7422">String make</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="169.0664"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="66" y="176.3633">String model</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="187.6875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="66" y="194.9844">String color</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="206.3086"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="66" y="213.6055">Year year</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="224.9297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="66" y="232.2266">int mileage</text><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="427" y1="239.7402" y2="239.7402"/><ellipse cx="57" cy="254.5508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="66" y="258.8477">&#171;Create&#187; Automobile()</text><ellipse cx="57" cy="273.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="356" x="66" y="277.4688">&#171;Create&#187; Automobile(String,String,String,String,Year,int)</text><ellipse cx="57" cy="291.793" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="66" y="296.0898">void setVin(String)</text><ellipse cx="57" cy="310.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="66" y="314.7109">void setMake(String)</text><ellipse cx="57" cy="329.0352" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="66" y="333.332">void setModel(String)</text><ellipse cx="57" cy="347.6563" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="66" y="351.9531">void setColor(String)</text><ellipse cx="57" cy="366.2773" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="66" y="370.5742">void setYear(Year)</text><ellipse cx="57" cy="384.8984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="66" y="389.1953">void setMileage(int)</text><ellipse cx="57" cy="403.5195" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="66" y="407.8164">String getVin()</text><ellipse cx="57" cy="422.1406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="66" y="426.4375">String getMake()</text><ellipse cx="57" cy="440.7617" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="66" y="445.0586">String getModel()</text><ellipse cx="57" cy="459.3828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="66" y="463.6797">String getColor()</text><ellipse cx="57" cy="478.0039" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="66" y="482.3008">Year getYear()</text><ellipse cx="57" cy="496.625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="66" y="500.9219">String getYearAsString()</text><ellipse cx="57" cy="515.2461" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="66" y="519.543">int getMileage()</text><ellipse cx="57" cy="533.8672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="66" y="538.1641">String[] getAutomobile()</text><ellipse cx="57" cy="552.4883" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="66" y="556.7852">String toString()</text></g><!--SRC=[fLHDYy8m4BttL-JOOjTV889uMbXFmi8Y7c8pbB1fuYPfGSJzxPil6sjRhUobxRoyl7cPpgHWM2a4f9uNgYwPE60sNzLQLE906Rpp1hWMyeJEoHjQIObF7rJfHMGi4Rro36Eh9UKbgl0tA4jCVj5120QO8z60b9J0ngmbin6j4dIRCiqChH6Ke0fudMuBp3d8V71ZPX8vp1imfggZa7fpzU6qXew52ObmEi388vQDskwgF74wQqj2wYEZ1TRmINdgdOyVBuOsdJrPJ7HZiKSK1DWavbem8ISnlm1F8sxC6vV3HiTgAQ4ohV9AEIVg3D9oN_PncVf8p0_wlntVaB6v7yhaeKEid3UusoDcI1FtjvEZS0ElxlcfgNvEFIkDDIqkVW_k3qxQPrMuxVFTFaikIV7myd5tJhXH6igxryjDP3iyXeLjOnFQ9aKdyp3Vb6jK-LuqfXQBjGJpKvVBctPrTeTNmcGElcoMtCZ7YeEEqtoB-edjmtu-UtYOnXxkPiy-EY9XpeAHK8dIM-aYpiOTv2nqCP_UOgwEPKZS9LbefNpibcoTosYdqxu6lwjs4DAYLRZy0G00]--></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="611px"
+   preserveAspectRatio="none"
+   style="width:1044px;height:611px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 1044 611"
+   width="1044px"
+   zoomAndPan="magnify"
+   id="svg228"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="g226">
+    <!--cluster edu-->
+    <g
+       id="cluster_edu">
+      <path
+         d="M8.5,6.0137 L36.5,6.0137 A3.75,3.75 0 0 1 39,8.5137 L46,30.6348 L1034.5,30.6348 A2.5,2.5 0 0 1 1037,33.1348 L1037,601.5137 A2.5,2.5 0 0 1 1034.5,604.0137 L8.5,604.0137 A2.5,2.5 0 0 1 6,601.5137 L6,8.5137 A2.5,2.5 0 0 1 8.5,6.0137 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path4" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="6"
+         x2="46"
+         y1="30.6348"
+         y2="30.6348"
+         id="line6" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="27"
+         x="10"
+         y="23.1211"
+         id="text8">edu</text>
+    </g>
+    <!--cluster csuglobal-->
+    <g
+       id="cluster_csuglobal">
+      <path
+         d="M32.5,51.0137 L101.5,51.0137 A3.75,3.75 0 0 1 104,53.5137 L111,75.6348 L1010.5,75.6348 A2.5,2.5 0 0 1 1013,78.1348 L1013,577.5137 A2.5,2.5 0 0 1 1010.5,580.0137 L32.5,580.0137 A2.5,2.5 0 0 1 30,577.5137 L30,53.5137 A2.5,2.5 0 0 1 32.5,51.0137 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path11" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="30"
+         x2="111"
+         y1="75.6348"
+         y2="75.6348"
+         id="line13" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="68"
+         x="34"
+         y="68.1211"
+         id="text15">csuglobal</text>
+    </g>
+    <!--class AutomobileInventory-->
+    <g
+       id="elem_AutomobileInventory">
+      <rect
+         codeLine="1"
+         fill="#F1F1F1"
+         height="476.2852"
+         id="AutomobileInventory"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="533"
+         x="463.5"
+         y="88.0137" />
+      <ellipse
+         cx="661.75"
+         cy="104.0137"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse19" />
+      <path
+         d="M664.5156,99.8887 Q664.6719,99.6699 664.8594,99.5605 Q665.0469,99.4512 665.2656,99.4512 Q665.6406,99.4512 665.875,99.7168 Q666.1094,99.9668 666.1094,100.5762 L666.1094,102.0293 Q666.1094,102.6387 665.875,102.9043 Q665.6406,103.1699 665.2656,103.1699 Q664.9219,103.1699 664.7188,102.9668 Q664.5156,102.7793 664.4063,102.2637 Q664.3594,101.9043 664.1719,101.7168 Q663.8438,101.3418 663.2344,101.123 Q662.625,100.9043 662,100.9043 Q661.2344,100.9043 660.5938,101.2324 Q659.9688,101.5605 659.4688,102.3105 Q658.9844,103.0605 658.9844,104.0918 L658.9844,105.1855 Q658.9844,106.4199 659.875,107.248 Q660.7656,108.0605 662.3594,108.0605 Q663.2969,108.0605 663.9531,107.8105 Q664.3438,107.6543 664.7656,107.2168 Q665.0313,106.9512 665.1719,106.873 Q665.3281,106.7949 665.5313,106.7949 Q665.8594,106.7949 666.1094,107.0605 Q666.375,107.3105 666.375,107.6543 Q666.375,107.998 666.0313,108.4043 Q665.5313,108.9824 664.7344,109.3105 Q663.6563,109.7637 662.3594,109.7637 Q660.8438,109.7637 659.6406,109.1387 Q658.6563,108.6387 657.9688,107.5762 Q657.2813,106.498 657.2813,105.2168 L657.2813,104.0605 Q657.2813,102.7324 657.8906,101.5918 Q658.5156,100.4355 659.6094,99.8262 Q660.7031,99.2012 661.9375,99.2012 Q662.6719,99.2012 663.3125,99.373 Q663.9688,99.5293 664.5156,99.8887 Z "
+         fill="#000000"
+         id="path21" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="128"
+         x="682.25"
+         y="109.8105"
+         id="text23">AutomobileInventory</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="464.5"
+         x2="995.5"
+         y1="120.0137"
+         y2="120.0137"
+         id="line25" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="471.5"
+         y="131.8242"
+         id="rect27" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="204"
+         x="483.5"
+         y="139.1211"
+         id="text29">ArrayList&lt;Automobile&gt; inventory</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="471.5"
+         y="150.4453"
+         id="rect31" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="104"
+         x="483.5"
+         y="157.7422"
+         id="text33">String makesList</text>
+      <polygon
+         fill="none"
+         points="474.5,168.0664,470.5,174.0664,478.5,174.0664"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon35" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="141"
+         x="483.5"
+         y="176.3633"
+         id="text37">boolean overrideMake</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="464.5"
+         x2="995.5"
+         y1="183.877"
+         y2="183.877"
+         id="line39" />
+      <ellipse
+         cx="474.5"
+         cy="198.6875"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse41" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="234"
+         x="483.5"
+         y="202.9844"
+         id="text43">ArrayList&lt;Automobile&gt; getInventory()</text>
+      <ellipse
+         cx="474.5"
+         cy="217.3086"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse45" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="274"
+         x="483.5"
+         y="221.6055"
+         id="text47">void menu(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,231.9297,470.5,237.9297,478.5,237.9297"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon49" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="191"
+         x="483.5"
+         y="240.2266"
+         id="text51">List&lt;String&gt; importMakesList()</text>
+      <ellipse
+         cx="474.5"
+         cy="254.5508"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse53" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="438"
+         x="483.5"
+         y="258.8477"
+         id="text55">AutomobileInventory addAutomobile(AutomobileInventory,Automobile)</text>
+      <ellipse
+         cx="474.5"
+         cy="273.1719"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse57" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="449"
+         x="483.5"
+         y="277.4688"
+         id="text59">ArrayList&lt;Automobile&gt; addAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="291.793"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse61" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="325"
+         x="483.5"
+         y="296.0898"
+         id="text63">boolean duplicateVin(String,ArrayList&lt;Automobile&gt;)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,306.4141,470.5,312.4141,478.5,312.4141"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon65" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="269"
+         x="483.5"
+         y="314.7109"
+         id="text67">Automobile addMake(Scanner,Automobile)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,325.0352,470.5,331.0352,478.5,331.0352"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon69" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="273"
+         x="483.5"
+         y="333.332"
+         id="text71">Automobile addModel(Scanner,Automobile)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,343.6563,470.5,349.6563,478.5,349.6563"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon73" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="269"
+         x="483.5"
+         y="351.9531"
+         id="text75">Automobile addColor(Scanner,Automobile)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,362.2773,470.5,368.2773,478.5,368.2773"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon77" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="265"
+         x="483.5"
+         y="370.5742"
+         id="text79">Automobile addYear(Scanner,Automobile)</text>
+      <polygon
+         fill="#4177AF"
+         points="474.5,380.8984,470.5,386.8984,478.5,386.8984"
+         style="stroke:#1963A0;stroke-width:1.0;"
+         id="polygon81" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="284"
+         x="483.5"
+         y="389.1953"
+         id="text83">Automobile addMileage(Scanner,Automobile)</text>
+      <ellipse
+         cx="474.5"
+         cy="403.5195"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse85" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="472"
+         x="483.5"
+         y="407.8164"
+         id="text87">ArrayList&lt;Automobile&gt; removeAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="422.1406"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse89" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="456"
+         x="483.5"
+         y="426.4375"
+         id="text91">ArrayList&lt;Automobile&gt; removeAutomobile(ArrayList&lt;Automobile&gt;,String)</text>
+      <ellipse
+         cx="474.5"
+         cy="440.7617"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse93" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="469"
+         x="483.5"
+         y="445.0586"
+         id="text95">ArrayList&lt;Automobile&gt; updateAutomobile(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="459.3828"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse97" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="507"
+         x="483.5"
+         y="463.6797"
+         id="text99">ArrayList&lt;Automobile&gt; importInventory(Scanner,ArrayList&lt;Automobile&gt;,boolean)</text>
+      <ellipse
+         cx="474.5"
+         cy="478.0039"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse101" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="333"
+         x="483.5"
+         y="482.3008"
+         id="text103">String[] listInventory(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="496.625"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse105" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="327"
+         x="483.5"
+         y="500.9219"
+         id="text107">void saveInventory(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="515.2461"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse109" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="262"
+         x="483.5"
+         y="519.543"
+         id="text111">void quit(Scanner,ArrayList&lt;Automobile&gt;)</text>
+      <ellipse
+         cx="474.5"
+         cy="533.8672"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse113" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="167"
+         x="483.5"
+         y="538.1641"
+         id="text115">void automobileInventory()</text>
+      <ellipse
+         cx="474.5"
+         cy="552.4883"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse117" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="115"
+         x="483.5"
+         y="556.7852"
+         id="text119">void main(String[])</text>
+    </g>
+    <!--class Automobile-->
+    <g
+       id="elem_Automobile">
+      <rect
+         codeLine="26"
+         fill="#F1F1F1"
+         height="476.2852"
+         id="Automobile"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="382"
+         x="46"
+         y="88.0137" />
+      <ellipse
+         cx="197.75"
+         cy="104.0137"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse123" />
+      <path
+         d="M200.5156,99.8887 Q200.6719,99.6699 200.8594,99.5605 Q201.0469,99.4512 201.2656,99.4512 Q201.6406,99.4512 201.875,99.7168 Q202.1094,99.9668 202.1094,100.5762 L202.1094,102.0293 Q202.1094,102.6387 201.875,102.9043 Q201.6406,103.1699 201.2656,103.1699 Q200.9219,103.1699 200.7188,102.9668 Q200.5156,102.7793 200.4063,102.2637 Q200.3594,101.9043 200.1719,101.7168 Q199.8438,101.3418 199.2344,101.123 Q198.625,100.9043 198,100.9043 Q197.2344,100.9043 196.5938,101.2324 Q195.9688,101.5605 195.4688,102.3105 Q194.9844,103.0605 194.9844,104.0918 L194.9844,105.1855 Q194.9844,106.4199 195.875,107.248 Q196.7656,108.0605 198.3594,108.0605 Q199.2969,108.0605 199.9531,107.8105 Q200.3438,107.6543 200.7656,107.2168 Q201.0313,106.9512 201.1719,106.873 Q201.3281,106.7949 201.5313,106.7949 Q201.8594,106.7949 202.1094,107.0605 Q202.375,107.3105 202.375,107.6543 Q202.375,107.998 202.0313,108.4043 Q201.5313,108.9824 200.7344,109.3105 Q199.6563,109.7637 198.3594,109.7637 Q196.8438,109.7637 195.6406,109.1387 Q194.6563,108.6387 193.9688,107.5762 Q193.2813,106.498 193.2813,105.2168 L193.2813,104.0605 Q193.2813,102.7324 193.8906,101.5918 Q194.5156,100.4355 195.6094,99.8262 Q196.7031,99.2012 197.9375,99.2012 Q198.6719,99.2012 199.3125,99.373 Q199.9688,99.5293 200.5156,99.8887 Z "
+         fill="#000000"
+         id="path125" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="70"
+         x="218.25"
+         y="109.8105"
+         id="text127">Automobile</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="47"
+         x2="427"
+         y1="120.0137"
+         y2="120.0137"
+         id="line129" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="131.8242"
+         id="rect131" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="59"
+         x="66"
+         y="139.1211"
+         id="text133">String vin</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="150.4453"
+         id="rect135" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="75"
+         x="66"
+         y="157.7422"
+         id="text137">String make</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="169.0664"
+         id="rect139" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="79"
+         x="66"
+         y="176.3633"
+         id="text141">String model</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="187.6875"
+         id="rect143" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72"
+         x="66"
+         y="194.9844"
+         id="text145">String color</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="206.3086"
+         id="rect147" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="62"
+         x="66"
+         y="213.6055"
+         id="text149">Year year</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="54"
+         y="224.9297"
+         id="rect151" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="68"
+         x="66"
+         y="232.2266"
+         id="text153">int mileage</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="47"
+         x2="427"
+         y1="239.7402"
+         y2="239.7402"
+         id="line155" />
+      <ellipse
+         cx="57"
+         cy="254.5508"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse157" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="143"
+         x="66"
+         y="258.8477"
+         id="text159">«Create» Automobile()</text>
+      <ellipse
+         cx="57"
+         cy="273.1719"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse161" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="356"
+         x="66"
+         y="277.4688"
+         id="text163">«Create» Automobile(String,String,String,String,Year,int)</text>
+      <ellipse
+         cx="57"
+         cy="291.793"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse165" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116"
+         x="66"
+         y="296.0898"
+         id="text167">void setVin(String)</text>
+      <ellipse
+         cx="57"
+         cy="310.4141"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse169" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="130"
+         x="66"
+         y="314.7109"
+         id="text171">void setMake(String)</text>
+      <ellipse
+         cx="57"
+         cy="329.0352"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse173" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="134"
+         x="66"
+         y="333.332"
+         id="text175">void setModel(String)</text>
+      <ellipse
+         cx="57"
+         cy="347.6563"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse177" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="130"
+         x="66"
+         y="351.9531"
+         id="text179">void setColor(String)</text>
+      <ellipse
+         cx="57"
+         cy="366.2773"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse181" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="119"
+         x="66"
+         y="370.5742"
+         id="text183">void setYear(Year)</text>
+      <ellipse
+         cx="57"
+         cy="384.8984"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse185" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="123"
+         x="66"
+         y="389.1953"
+         id="text187">void setMileage(int)</text>
+      <ellipse
+         cx="57"
+         cy="403.5195"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse189" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="91"
+         x="66"
+         y="407.8164"
+         id="text191">String getVin()</text>
+      <ellipse
+         cx="57"
+         cy="422.1406"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse193" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="105"
+         x="66"
+         y="426.4375"
+         id="text195">String getMake()</text>
+      <ellipse
+         cx="57"
+         cy="440.7617"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse197" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="109"
+         x="66"
+         y="445.0586"
+         id="text199">String getModel()</text>
+      <ellipse
+         cx="57"
+         cy="459.3828"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse201" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="105"
+         x="66"
+         y="463.6797"
+         id="text203">String getColor()</text>
+      <ellipse
+         cx="57"
+         cy="478.0039"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse205" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="94"
+         x="66"
+         y="482.3008"
+         id="text207">Year getYear()</text>
+      <ellipse
+         cx="57"
+         cy="496.625"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse209" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="154"
+         x="66"
+         y="500.9219"
+         id="text211">String getYearAsString()</text>
+      <ellipse
+         cx="57"
+         cy="515.2461"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse213" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="98"
+         x="66"
+         y="519.543"
+         id="text215">int getMileage()</text>
+      <ellipse
+         cx="57"
+         cy="533.8672"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse217" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="149"
+         x="66"
+         y="538.1641"
+         id="text219">String[] getAutomobile()</text>
+      <ellipse
+         cx="57"
+         cy="552.4883"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse221" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="100"
+         x="66"
+         y="556.7852"
+         id="text223">String toString()</text>
+    </g>
+    <!--SRC=[fLHDYy8m4BttL-JOOjTV889uMbXFmi8Y7c8pbB1fuYPfGSJzxPil6sjRhUobxRoyl7cPpgHWM2a4f9uNgYwPE60sNzLQLE906Rpp1hWMyeJEoHjQIObF7rJfHMGi4Rro36Eh9UKbgl0tA4jCVj5120QO8z60b9J0ngmbin6j4dIRCiqChH6Ke0fudMuBp3d8V71ZPX8vp1imfggZa7fpzU6qXew52ObmEi388vQDskwgF74wQqj2wYEZ1TRmINdgdOyVBuOsdJrPJ7HZiKSK1DWavbem8ISnlm1F8sxC6vV3HiTgAQ4ohV9AEIVg3D9oN_PncVf8p0_wlntVaB6v7yhaeKEid3UusoDcI1FtjvEZS0ElxlcfgNvEFIkDDIqkVW_k3qxQPrMuxVFTFaikIV7myd5tJhXH6igxryjDP3iyXeLjOnFQ9aKdyp3Vb6jK-LuqfXQBjGJpKvVBctPrTeTNmcGElcoMtCZ7YeEEqtoB-edjmtu-UtYOnXxkPiy-EY9XpeAHK8dIM-aYpiOTv2nqCP_UOgwEPKZS9LbefNpibcoTosYdqxu6lwjs4DAYLRZy0G00]-->
+  </g>
+</svg>

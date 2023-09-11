@@ -1,1 +1,465 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="496px" preserveAspectRatio="none" style="width:618px;height:496px;background:#FFFFFF;" version="1.1" viewBox="0 0 618 496" width="618px" zoomAndPan="magnify"><defs/><g><!--cluster util--><g id="cluster_util"><path d="M8.5,6.0137 L31.5,6.0137 A3.75,3.75 0 0 1 34,8.5137 L41,30.6348 L608.5,30.6348 A2.5,2.5 0 0 1 611,33.1348 L611,486.5137 A2.5,2.5 0 0 1 608.5,489.0137 L8.5,489.0137 A2.5,2.5 0 0 1 6,486.5137 L6,8.5137 A2.5,2.5 0 0 1 8.5,6.0137 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="41" y1="30.6348" y2="30.6348"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="22" x="10" y="23.1211">util</text></g><!--cluster speters33w--><g id="cluster_speters33w"><path d="M32.5,51.0137 L114.5,51.0137 A3.75,3.75 0 0 1 117,53.5137 L124,75.6348 L584.5,75.6348 A2.5,2.5 0 0 1 587,78.1348 L587,462.5137 A2.5,2.5 0 0 1 584.5,465.0137 L32.5,465.0137 A2.5,2.5 0 0 1 30,462.5137 L30,53.5137 A2.5,2.5 0 0 1 32.5,51.0137 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="124" y1="75.6348" y2="75.6348"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="81" x="34" y="68.1211">speters33w</text></g><!--class SearchTools--><g id="elem_SearchTools"><rect codeLine="1" fill="#F1F1F1" height="103.8633" id="SearchTools" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="326" x="46" y="153.0137"/><ellipse cx="164.75" cy="169.0137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M167.5156,164.8887 Q167.6719,164.6699 167.8594,164.5605 Q168.0469,164.4512 168.2656,164.4512 Q168.6406,164.4512 168.875,164.7168 Q169.1094,164.9668 169.1094,165.5762 L169.1094,167.0293 Q169.1094,167.6387 168.875,167.9043 Q168.6406,168.1699 168.2656,168.1699 Q167.9219,168.1699 167.7188,167.9668 Q167.5156,167.7793 167.4063,167.2637 Q167.3594,166.9043 167.1719,166.7168 Q166.8438,166.3418 166.2344,166.123 Q165.625,165.9043 165,165.9043 Q164.2344,165.9043 163.5938,166.2324 Q162.9688,166.5605 162.4688,167.3105 Q161.9844,168.0605 161.9844,169.0918 L161.9844,170.1855 Q161.9844,171.4199 162.875,172.248 Q163.7656,173.0605 165.3594,173.0605 Q166.2969,173.0605 166.9531,172.8105 Q167.3438,172.6543 167.7656,172.2168 Q168.0313,171.9512 168.1719,171.873 Q168.3281,171.7949 168.5313,171.7949 Q168.8594,171.7949 169.1094,172.0605 Q169.375,172.3105 169.375,172.6543 Q169.375,172.998 169.0313,173.4043 Q168.5313,173.9824 167.7344,174.3105 Q166.6563,174.7637 165.3594,174.7637 Q163.8438,174.7637 162.6406,174.1387 Q161.6563,173.6387 160.9688,172.5762 Q160.2813,171.498 160.2813,170.2168 L160.2813,169.0605 Q160.2813,167.7324 160.8906,166.5918 Q161.5156,165.4355 162.6094,164.8262 Q163.7031,164.2012 164.9375,164.2012 Q165.6719,164.2012 166.3125,164.373 Q166.9688,164.5293 167.5156,164.8887 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="185.25" y="174.8105">SearchTools</text><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="371" y1="185.0137" y2="185.0137"/><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="371" y1="193.0137" y2="193.0137"/><ellipse cx="57" cy="207.8242" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="281" x="66" y="212.1211">List&lt;String&gt; fuzzySearch(List&lt;String&gt;,String)</text><ellipse cx="57" cy="226.4453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="300" x="66" y="230.7422">List&lt;String&gt; fuzzySearch(List&lt;String&gt;,String,int)</text><ellipse cx="57" cy="245.0664" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="261" x="66" y="249.3633">void possibleMatches(List&lt;String&gt;,String)</text></g><!--class DateTools--><g id="elem_DateTools"><rect codeLine="6" fill="#F1F1F1" height="234.2109" id="DateTools" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="407" y="88.0137"/><ellipse cx="452.25" cy="104.0137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M455.0156,99.8887 Q455.1719,99.6699 455.3594,99.5605 Q455.5469,99.4512 455.7656,99.4512 Q456.1406,99.4512 456.375,99.7168 Q456.6094,99.9668 456.6094,100.5762 L456.6094,102.0293 Q456.6094,102.6387 456.375,102.9043 Q456.1406,103.1699 455.7656,103.1699 Q455.4219,103.1699 455.2188,102.9668 Q455.0156,102.7793 454.9063,102.2637 Q454.8594,101.9043 454.6719,101.7168 Q454.3438,101.3418 453.7344,101.123 Q453.125,100.9043 452.5,100.9043 Q451.7344,100.9043 451.0938,101.2324 Q450.4688,101.5605 449.9688,102.3105 Q449.4844,103.0605 449.4844,104.0918 L449.4844,105.1855 Q449.4844,106.4199 450.375,107.248 Q451.2656,108.0605 452.8594,108.0605 Q453.7969,108.0605 454.4531,107.8105 Q454.8438,107.6543 455.2656,107.2168 Q455.5313,106.9512 455.6719,106.873 Q455.8281,106.7949 456.0313,106.7949 Q456.3594,106.7949 456.6094,107.0605 Q456.875,107.3105 456.875,107.6543 Q456.875,107.998 456.5313,108.4043 Q456.0313,108.9824 455.2344,109.3105 Q454.1563,109.7637 452.8594,109.7637 Q451.3438,109.7637 450.1406,109.1387 Q449.1563,108.6387 448.4688,107.5762 Q447.7813,106.498 447.7813,105.2168 L447.7813,104.0605 Q447.7813,102.7324 448.3906,101.5918 Q449.0156,100.4355 450.1094,99.8262 Q451.2031,99.2012 452.4375,99.2012 Q453.1719,99.2012 453.8125,99.373 Q454.4688,99.5293 455.0156,99.8887 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="472.75" y="109.8105">DateTools</text><line style="stroke:#181818;stroke-width:0.5;" x1="408" x2="570" y1="120.0137" y2="120.0137"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="131.8242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="427" y="139.1211">LocalDateTime now</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="150.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="427" y="157.7422">int year</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="169.0664"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="427" y="176.3633">int month</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="187.6875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="427" y="194.9844">int day</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="206.3086"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="427" y="213.6055">int hour</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="224.9297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="427" y="232.2266">int minute</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="415" y="243.5508"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="427" y="250.8477">int second</text><line style="stroke:#181818;stroke-width:0.5;" x1="408" x2="570" y1="258.3613" y2="258.3613"/><ellipse cx="418" cy="273.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="427" y="277.4688">&#171;Create&#187; DateTools()</text><ellipse cx="418" cy="291.793" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="427" y="296.0898">String getTime()</text><ellipse cx="418" cy="310.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="115" x="427" y="314.7109">void main(String[])</text></g><!--class ANSIColor--><g id="elem_ANSIColor"><rect codeLine="18" fill="#F1F1F1" height="66.6211" id="ANSIColor" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="145" x="136.5" y="382.0137"/><ellipse cx="173.55" cy="398.0137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M176.3156,393.8887 Q176.4719,393.6699 176.6594,393.5605 Q176.8469,393.4512 177.0656,393.4512 Q177.4406,393.4512 177.675,393.7168 Q177.9094,393.9668 177.9094,394.5762 L177.9094,396.0293 Q177.9094,396.6387 177.675,396.9043 Q177.4406,397.1699 177.0656,397.1699 Q176.7219,397.1699 176.5188,396.9668 Q176.3156,396.7793 176.2063,396.2637 Q176.1594,395.9043 175.9719,395.7168 Q175.6438,395.3418 175.0344,395.123 Q174.425,394.9043 173.8,394.9043 Q173.0344,394.9043 172.3938,395.2324 Q171.7688,395.5605 171.2688,396.3105 Q170.7844,397.0605 170.7844,398.0918 L170.7844,399.1855 Q170.7844,400.4199 171.675,401.248 Q172.5656,402.0605 174.1594,402.0605 Q175.0969,402.0605 175.7531,401.8105 Q176.1438,401.6543 176.5656,401.2168 Q176.8313,400.9512 176.9719,400.873 Q177.1281,400.7949 177.3313,400.7949 Q177.6594,400.7949 177.9094,401.0605 Q178.175,401.3105 178.175,401.6543 Q178.175,401.998 177.8313,402.4043 Q177.3313,402.9824 176.5344,403.3105 Q175.4563,403.7637 174.1594,403.7637 Q172.6438,403.7637 171.4406,403.1387 Q170.4563,402.6387 169.7688,401.5762 Q169.0813,400.498 169.0813,399.2168 L169.0813,398.0605 Q169.0813,396.7324 169.6906,395.5918 Q170.3156,394.4355 171.4094,393.8262 Q172.5031,393.2012 173.7375,393.2012 Q174.4719,393.2012 175.1125,393.373 Q175.7688,393.5293 176.3156,393.8887 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="192.45" y="403.8105">ANSIColor</text><line style="stroke:#181818;stroke-width:0.5;" x1="137.5" x2="280.5" y1="414.0137" y2="414.0137"/><line style="stroke:#181818;stroke-width:0.5;" x1="137.5" x2="280.5" y1="422.0137" y2="422.0137"/><ellipse cx="147.5" cy="436.8242" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="119" x="156.5" y="441.1211">String color(String)</text></g><!--SRC=[dL6nJiCm4Dtx5JSQKRfqZIAXiY2rBEc668npD2SvliftQPLM_NSSOY8goiBavxjtzzwpdRSYq2dvXUnHCSfoULnKQADhjinUu3oxXxEeLN8NM9DeKMcai2lXepkT-f5gVZRcutdtty4v1RqQFZ3Li6SHUlUuiUeQbDkAbvcx6UZ9Adx7UO0rE-k_IjGY13wcMjA4FbdAiEMWJSQrxJDgk9i853h5V15q7EfakIXM4TFYieH9qWnPHeEmGnqqpUzuhQLWHjRhszz17b-gvnLxZjV_ajUxeMEcn_W4]--></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="496px"
+   preserveAspectRatio="none"
+   style="width:618px;height:496px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 618 496"
+   width="618px"
+   zoomAndPan="magnify"
+   id="svg112"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="g110">
+    <!--cluster util-->
+    <g
+       id="cluster_util">
+      <path
+         d="M8.5,6.0137 L31.5,6.0137 A3.75,3.75 0 0 1 34,8.5137 L41,30.6348 L608.5,30.6348 A2.5,2.5 0 0 1 611,33.1348 L611,486.5137 A2.5,2.5 0 0 1 608.5,489.0137 L8.5,489.0137 A2.5,2.5 0 0 1 6,486.5137 L6,8.5137 A2.5,2.5 0 0 1 8.5,6.0137 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path4" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="6"
+         x2="41"
+         y1="30.6348"
+         y2="30.6348"
+         id="line6" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="22"
+         x="10"
+         y="23.1211"
+         id="text8">util</text>
+    </g>
+    <!--cluster speters33w-->
+    <g
+       id="cluster_speters33w">
+      <path
+         d="M32.5,51.0137 L114.5,51.0137 A3.75,3.75 0 0 1 117,53.5137 L124,75.6348 L584.5,75.6348 A2.5,2.5 0 0 1 587,78.1348 L587,462.5137 A2.5,2.5 0 0 1 584.5,465.0137 L32.5,465.0137 A2.5,2.5 0 0 1 30,462.5137 L30,53.5137 A2.5,2.5 0 0 1 32.5,51.0137 "
+         fill="none"
+         style="stroke:#000000;stroke-width:1.5;"
+         id="path11" />
+      <line
+         style="stroke:#000000;stroke-width:1.5;"
+         x1="30"
+         x2="124"
+         y1="75.6348"
+         y2="75.6348"
+         id="line13" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="81"
+         x="34"
+         y="68.1211"
+         id="text15">speters33w</text>
+    </g>
+    <!--class SearchTools-->
+    <g
+       id="elem_SearchTools">
+      <rect
+         codeLine="1"
+         fill="#F1F1F1"
+         height="103.8633"
+         id="SearchTools"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="326"
+         x="46"
+         y="153.0137" />
+      <ellipse
+         cx="164.75"
+         cy="169.0137"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse19" />
+      <path
+         d="M167.5156,164.8887 Q167.6719,164.6699 167.8594,164.5605 Q168.0469,164.4512 168.2656,164.4512 Q168.6406,164.4512 168.875,164.7168 Q169.1094,164.9668 169.1094,165.5762 L169.1094,167.0293 Q169.1094,167.6387 168.875,167.9043 Q168.6406,168.1699 168.2656,168.1699 Q167.9219,168.1699 167.7188,167.9668 Q167.5156,167.7793 167.4063,167.2637 Q167.3594,166.9043 167.1719,166.7168 Q166.8438,166.3418 166.2344,166.123 Q165.625,165.9043 165,165.9043 Q164.2344,165.9043 163.5938,166.2324 Q162.9688,166.5605 162.4688,167.3105 Q161.9844,168.0605 161.9844,169.0918 L161.9844,170.1855 Q161.9844,171.4199 162.875,172.248 Q163.7656,173.0605 165.3594,173.0605 Q166.2969,173.0605 166.9531,172.8105 Q167.3438,172.6543 167.7656,172.2168 Q168.0313,171.9512 168.1719,171.873 Q168.3281,171.7949 168.5313,171.7949 Q168.8594,171.7949 169.1094,172.0605 Q169.375,172.3105 169.375,172.6543 Q169.375,172.998 169.0313,173.4043 Q168.5313,173.9824 167.7344,174.3105 Q166.6563,174.7637 165.3594,174.7637 Q163.8438,174.7637 162.6406,174.1387 Q161.6563,173.6387 160.9688,172.5762 Q160.2813,171.498 160.2813,170.2168 L160.2813,169.0605 Q160.2813,167.7324 160.8906,166.5918 Q161.5156,165.4355 162.6094,164.8262 Q163.7031,164.2012 164.9375,164.2012 Q165.6719,164.2012 166.3125,164.373 Q166.9688,164.5293 167.5156,164.8887 Z "
+         fill="#000000"
+         id="path21" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="80"
+         x="185.25"
+         y="174.8105"
+         id="text23">SearchTools</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="47"
+         x2="371"
+         y1="185.0137"
+         y2="185.0137"
+         id="line25" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="47"
+         x2="371"
+         y1="193.0137"
+         y2="193.0137"
+         id="line27" />
+      <ellipse
+         cx="57"
+         cy="207.8242"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse29" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="281"
+         x="66"
+         y="212.1211"
+         id="text31">List&lt;String&gt; fuzzySearch(List&lt;String&gt;,String)</text>
+      <ellipse
+         cx="57"
+         cy="226.4453"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse33" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="300"
+         x="66"
+         y="230.7422"
+         id="text35">List&lt;String&gt; fuzzySearch(List&lt;String&gt;,String,int)</text>
+      <ellipse
+         cx="57"
+         cy="245.0664"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse37" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="261"
+         x="66"
+         y="249.3633"
+         id="text39">void possibleMatches(List&lt;String&gt;,String)</text>
+    </g>
+    <!--class DateTools-->
+    <g
+       id="elem_DateTools">
+      <rect
+         codeLine="6"
+         fill="#F1F1F1"
+         height="234.2109"
+         id="DateTools"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="164"
+         x="407"
+         y="88.0137" />
+      <ellipse
+         cx="452.25"
+         cy="104.0137"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse43" />
+      <path
+         d="M455.0156,99.8887 Q455.1719,99.6699 455.3594,99.5605 Q455.5469,99.4512 455.7656,99.4512 Q456.1406,99.4512 456.375,99.7168 Q456.6094,99.9668 456.6094,100.5762 L456.6094,102.0293 Q456.6094,102.6387 456.375,102.9043 Q456.1406,103.1699 455.7656,103.1699 Q455.4219,103.1699 455.2188,102.9668 Q455.0156,102.7793 454.9063,102.2637 Q454.8594,101.9043 454.6719,101.7168 Q454.3438,101.3418 453.7344,101.123 Q453.125,100.9043 452.5,100.9043 Q451.7344,100.9043 451.0938,101.2324 Q450.4688,101.5605 449.9688,102.3105 Q449.4844,103.0605 449.4844,104.0918 L449.4844,105.1855 Q449.4844,106.4199 450.375,107.248 Q451.2656,108.0605 452.8594,108.0605 Q453.7969,108.0605 454.4531,107.8105 Q454.8438,107.6543 455.2656,107.2168 Q455.5313,106.9512 455.6719,106.873 Q455.8281,106.7949 456.0313,106.7949 Q456.3594,106.7949 456.6094,107.0605 Q456.875,107.3105 456.875,107.6543 Q456.875,107.998 456.5313,108.4043 Q456.0313,108.9824 455.2344,109.3105 Q454.1563,109.7637 452.8594,109.7637 Q451.3438,109.7637 450.1406,109.1387 Q449.1563,108.6387 448.4688,107.5762 Q447.7813,106.498 447.7813,105.2168 L447.7813,104.0605 Q447.7813,102.7324 448.3906,101.5918 Q449.0156,100.4355 450.1094,99.8262 Q451.2031,99.2012 452.4375,99.2012 Q453.1719,99.2012 453.8125,99.373 Q454.4688,99.5293 455.0156,99.8887 Z "
+         fill="#000000"
+         id="path45" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="65"
+         x="472.75"
+         y="109.8105"
+         id="text47">DateTools</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="408"
+         x2="570"
+         y1="120.0137"
+         y2="120.0137"
+         id="line49" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="131.8242"
+         id="rect51" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="124"
+         x="427"
+         y="139.1211"
+         id="text53">LocalDateTime now</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="150.4453"
+         id="rect55" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="47"
+         x="427"
+         y="157.7422"
+         id="text57">int year</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="169.0664"
+         id="rect59" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="58"
+         x="427"
+         y="176.3633"
+         id="text61">int month</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="187.6875"
+         id="rect63" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="42"
+         x="427"
+         y="194.9844"
+         id="text65">int day</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="206.3086"
+         id="rect67" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="48"
+         x="427"
+         y="213.6055"
+         id="text69">int hour</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="224.9297"
+         id="rect71" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="61"
+         x="427"
+         y="232.2266"
+         id="text73">int minute</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#C82930;stroke-width:1.0;"
+         width="6"
+         x="415"
+         y="243.5508"
+         id="rect75" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="65"
+         x="427"
+         y="250.8477"
+         id="text77">int second</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="408"
+         x2="570"
+         y1="258.3613"
+         y2="258.3613"
+         id="line79" />
+      <ellipse
+         cx="418"
+         cy="273.1719"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse81" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="138"
+         x="427"
+         y="277.4688"
+         id="text83">«Create» DateTools()</text>
+      <ellipse
+         cx="418"
+         cy="291.793"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse85" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="102"
+         x="427"
+         y="296.0898"
+         id="text87">String getTime()</text>
+      <ellipse
+         cx="418"
+         cy="310.4141"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse89" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="115"
+         x="427"
+         y="314.7109"
+         id="text91">void main(String[])</text>
+    </g>
+    <!--class ANSIColor-->
+    <g
+       id="elem_ANSIColor">
+      <rect
+         codeLine="18"
+         fill="#F1F1F1"
+         height="66.6211"
+         id="ANSIColor"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5;"
+         width="145"
+         x="136.5"
+         y="382.0137" />
+      <ellipse
+         cx="173.55"
+         cy="398.0137"
+         fill="#ADD1B2"
+         rx="11"
+         ry="11"
+         style="stroke:#181818;stroke-width:1.0;"
+         id="ellipse95" />
+      <path
+         d="M176.3156,393.8887 Q176.4719,393.6699 176.6594,393.5605 Q176.8469,393.4512 177.0656,393.4512 Q177.4406,393.4512 177.675,393.7168 Q177.9094,393.9668 177.9094,394.5762 L177.9094,396.0293 Q177.9094,396.6387 177.675,396.9043 Q177.4406,397.1699 177.0656,397.1699 Q176.7219,397.1699 176.5188,396.9668 Q176.3156,396.7793 176.2063,396.2637 Q176.1594,395.9043 175.9719,395.7168 Q175.6438,395.3418 175.0344,395.123 Q174.425,394.9043 173.8,394.9043 Q173.0344,394.9043 172.3938,395.2324 Q171.7688,395.5605 171.2688,396.3105 Q170.7844,397.0605 170.7844,398.0918 L170.7844,399.1855 Q170.7844,400.4199 171.675,401.248 Q172.5656,402.0605 174.1594,402.0605 Q175.0969,402.0605 175.7531,401.8105 Q176.1438,401.6543 176.5656,401.2168 Q176.8313,400.9512 176.9719,400.873 Q177.1281,400.7949 177.3313,400.7949 Q177.6594,400.7949 177.9094,401.0605 Q178.175,401.3105 178.175,401.6543 Q178.175,401.998 177.8313,402.4043 Q177.3313,402.9824 176.5344,403.3105 Q175.4563,403.7637 174.1594,403.7637 Q172.6438,403.7637 171.4406,403.1387 Q170.4563,402.6387 169.7688,401.5762 Q169.0813,400.498 169.0813,399.2168 L169.0813,398.0605 Q169.0813,396.7324 169.6906,395.5918 Q170.3156,394.4355 171.4094,393.8262 Q172.5031,393.2012 173.7375,393.2012 Q174.4719,393.2012 175.1125,393.373 Q175.7688,393.5293 176.3156,393.8887 Z "
+         fill="#000000"
+         id="path97" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="64"
+         x="192.45"
+         y="403.8105"
+         id="text99">ANSIColor</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="137.5"
+         x2="280.5"
+         y1="414.0137"
+         y2="414.0137"
+         id="line101" />
+      <line
+         style="stroke:#181818;stroke-width:0.5;"
+         x1="137.5"
+         x2="280.5"
+         y1="422.0137"
+         y2="422.0137"
+         id="line103" />
+      <ellipse
+         cx="147.5"
+         cy="436.8242"
+         fill="#84BE84"
+         rx="3"
+         ry="3"
+         style="stroke:#038048;stroke-width:1.0;"
+         id="ellipse105" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         text-decoration="underline"
+         textLength="119"
+         x="156.5"
+         y="441.1211"
+         id="text107">String color(String)</text>
+    </g>
+    <!--SRC=[dL6nJiCm4Dtx5JSQKRfqZIAXiY2rBEc668npD2SvliftQPLM_NSSOY8goiBavxjtzzwpdRSYq2dvXUnHCSfoULnKQADhjinUu3oxXxEeLN8NM9DeKMcai2lXepkT-f5gVZRcutdtty4v1RqQFZ3Li6SHUlUuiUeQbDkAbvcx6UZ9Adx7UO0rE-k_IjGY13wcMjA4FbdAiEMWJSQrxJDgk9i853h5V15q7EfakIXM4TFYieH9qWnPHeEmGnqqpUzuhQLWHjRhszz17b-gvnLxZjV_ajUxeMEcn_W4]-->
+  </g>
+</svg>
