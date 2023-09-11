@@ -1,7 +1,9 @@
 package edu.csuglobal;
 
 import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.csv.QuoteMode;
 import org.openqa.selenium.support.Colors;
 
 import javax.swing.JFileChooser;
@@ -9,6 +11,7 @@ import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.time.Year;
@@ -448,7 +451,34 @@ public class AutomobileInventory {
     }
 
     public void saveInventory(Scanner input, ArrayList<Automobile> inventory) {
-        //  todo implement save function
+        try {
+            FileWriter writer = new FileWriter("automobileInventory.adb");
+            CSVPrinter csvPrinter = new CSVPrinter(writer,
+                    CSVFormat.Builder.create()
+                            .setDelimiter(",")
+                            .setRecordSeparator("\n")
+                            .setEscape('\\')
+                            .setQuoteMode(QuoteMode.NONE)
+                            .setHeader("vin", "make", "model", "color", "year", "mileage")
+                            .build());
+            for (Automobile automobile : inventory) {
+                System.out.println(automobile.toString());
+                csvPrinter.printRecord(automobile.getVin(), automobile.getMake(), automobile.getModel(),
+                        automobile.getColor(), automobile.getYear().toString(), String.valueOf(automobile.getMileage()));
+            }
+            System.out.printf("%s***** SAVE SUCCESSFUL! *****%s%n",
+                    color("green"), color("reset"));
+            csvPrinter.flush();
+        // This does not throw an exception, but prints current records to console for possible salvage.
+        } catch (IOException ioe) {
+            System.out.printf("%n%s***** SAVE UNSUCCESSFUL! *****%s%n%n",
+                    color("red"), color("reset"));
+            System.out.printf("%s%s%s%n",
+                    color("red"), ioe.getMessage(), color("reset"));
+            System.out.printf("%s%s%s%n",
+                    color("red"), "Current automobile inventory contains: ", color("reset"));
+            listInventory(input, inventory);
+        }
     }
 
     /**
