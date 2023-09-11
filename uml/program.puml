@@ -18,7 +18,7 @@ class edu.csuglobal.AutomobileInventory {
 + ArrayList<Automobile> removeAutomobile(ArrayList<Automobile>,String)
 + ArrayList<Automobile> updateAutomobile(Scanner,ArrayList<Automobile>)
 + ArrayList<Automobile> importInventory(Scanner,ArrayList<Automobile>,boolean)
-+ void listInventory(Scanner,ArrayList<Automobile>)
++ String[] listInventory(Scanner,ArrayList<Automobile>)
 + void saveInventory(Scanner,ArrayList<Automobile>)
 + void quit(Scanner,ArrayList<Automobile>)
 + {static} void automobileInventory()

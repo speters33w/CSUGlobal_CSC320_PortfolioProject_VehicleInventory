@@ -4,5 +4,3 @@ vin,make,model,color,year,mileage
 1C4HJXEG5KW577508,Jeep,Wrangler Unlimited Sahara,Black,2019,37590
 1FA6P8R04P5500141,Ford,Mustang Mach 1,Blue,2023,325
 2HGFA16876H507820,Honda,Civic EX,Black,2006,-1
-JTDL9RFU0L3021404,Toyota,Prius LE,Red,2020,18103
-1HGCT1B88HA000025,Honda,Accord EX-L,White,2017,110518
