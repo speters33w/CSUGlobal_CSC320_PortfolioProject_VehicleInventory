@@ -1,0 +1,984 @@
+    Zanella,1948,2023
+    Anasagasti,1911,1915
+    Andino,1967,1973
+    ASA,1961,1969
+    Eniak,1983,1989
+    Hispano-Argentina,1925,1953
+    Industrias Aeronáuticas y Mecánicas del Estado (IAME, Mechanical Aircraft Industries of the State, 1951,1979), not to be confused with Italian American Motor Engineering
+    Industrias Kaiser Argentina (IKA, 1956,1975), United Kingdom
+
+    Bolwell,1979,2023
+    Borland Racing Developments,1984,2023
+    Bufori,1986,2023
+    Bullet,1996,2023
+    Devaux,2001,2023
+    Elfin Cars,1958,2023
+    Finch Restorations,1965,2023
+    Jacer,1995,2023
+    Joss Developments,2004,2023
+    Minetti Sports Cars,2003,2023
+    Nota,1955,2023
+    PRB,1978,2023
+    Puma Clubman,1998,2023
+    Python,1981,2023
+    Quantum,2015,2023
+    Roaring Forties,1997,2023
+    Spartan-V,2004,2023
+    Stohr Cars,1991,2023
+
+    Alpha Sports,1963,2005
+    Ascort,1958,1960
+    Austin,1954,1983
+    Australian Six,1919,1930
+    Australis,1897,1907
+    Birchfield,2003,2004
+    Blade,2008,2013
+    Borgward
+    Buchanan
+    Buckle,1955,1959
+    Bush Ranger,1977,2016
+    Caldwell Vale,1907,1913
+    Cheetah
+    Giocattolo,1986,1989
+    Goggomobil,1958,1961
+    Hartnett,1949,1955
+    Holden,1948,2020
+    HSV,1987,2017
+    Ilinga,1974,1975
+    Kaditcha
+    Leyland,1973,1982
+    Lloyd-Hartnett,1957,1962
+    Lonsdale,1982,1983
+    Pellandini,1970,1978
+    Purvis Eureka,1974,1991
+    Shrike,1988,1989
+    Southern Cross,1931,1935
+    Statesman,1971,1984
+    Tarrant,1900,1907
+    Zeta,1963,1965
+
+    Eurostar Automobilwerk
+    KTM
+    Magna Steyr
+    ÖAF
+    Puch
+    Steyr Motors GmbH
+    Rosenbauer
+    Tushek&Spigel Supercars
+
+    Austro-Daimler,1889,1934
+    Austro-Tatra,1934,1948
+    Custoca,1966,1988
+    Denzel,1948,1959
+    Felber Autoroller,1952,1953
+    Gräf & Stift,1902,2001
+    Grofri,1921,1931
+    Libelle,1952,1954
+    Lohner–Porsche,1900,1905
+    Möve 101
+    Steyr automobile
+    Steyr-Daimler-Puch
+
+    GA,1986,2023
+    NAZ,2010,2023
+
+    Aziz,2005,2010
+
+    BelGee,2011,2023
+
+    Ford Union,1997,2000
+
+    Edran,1984,2023
+    Gillet,1982,2023
+
+    ADK,1930
+    Alatac,1913,1914
+    Apal,1998
+    Astra,1931
+    Auto-Mixte,1906,1912
+    De Wandre,1923
+    Delecroix,1899
+    Excelsior,1904,1932
+    Flaid,1921
+    Germain,1901
+    Imperia,1906,1948, 2009,2015
+    Jeecy-Vea,1926
+    Juwel,1928
+    Meeussen,1972
+    Miesse,1926
+    Minerva,1939
+    Pieper,1903
+    Pipe,1922
+    Ranger,1970,1978
+    Royal Star,1910
+    Springuel,1912
+    Vincke,1905
+    Vivinus,1912
+
+    Agrale,1982,2023
+    Chamonix,1987,2023
+    TAC,2004,2023
+    Volkswagen,1953,2023
+
+    Dacon,1964,1996
+    Dardo,1981
+    Engesa,1963,1993
+    Fabral
+    Farus
+    FNM,1960,1963
+    Gurgel,1966,1995
+    Hofstetter turbo,1986,1989
+    Lobini,2002,2014
+    MP Lafer,1974–1990
+    Puma,1967,1997
+    Santa Matilde,1977,1997
+    Troller,1998,2021
+    Uirapuru,1966,1968
+    Willys
+
+    Litex Motors
+    SIN Cars
+
+    Bulgaralpine
+    Bulgarrenault
+    Moskvitch
+    Pirin-Fiat
+    Sofia
+
+
+    Intermeccanica,1959,2023
+    Felino,2009,2023
+
+    Acadian,1961,1971
+    Amherst,1912
+    Asüna,1992,1995
+    Beaumont
+    Bricklin,1974,1975
+    Brock,1921
+    Brooks,1923,1926
+    Canadian,1921
+    Canadian Motor,1900,1902
+    Clinton,1911,1912
+    Colonial,1922
+    Dominion Motors Frontenac,1931,1933
+    ElectraMeccanica,2019-2023
+    Envoy
+    Epic
+    Frontenac,1959,1960
+    Gareau,1910
+    Gray-Dort,1915,1925
+    London Six,1922,1924
+    Manic GT,1969,1971
+    McLaughlin,1908,1922
+    Meteor,1949,1976
+    Monarch,1946,1961
+    Moose Jaw Standard,1916,1919
+    Queen,1901,1903
+    Studebaker,1963,1966
+    Tudhope,1906,1913
+    ZENN,2006,2010
+
+    BAIC Group
+        Arcfox,2017,2023
+        Changhe,1970,2023
+        Foton,1996,2023
+    Beijing Automobile Works,1958,2023
+    BYD,2003,2023
+        Denza,2010,2023
+    Chang'an Motors,1990,2023
+        Changan (since 1986
+        Hafei
+    Chery (Qirui),1997,2023
+    Dongfeng,1969,2023
+        Dongfeng Fengshen
+        Venucia,2010,2023
+    First Automobile Works (FAW),1953,2023
+        FAW Tianjin (Xiali),1986,2020
+        Haima Automobile,2004,2023
+        Hongqi (Red Flag),1958,2023
+        Huali
+    Fudi,1996,2023
+    Geely (Jili),1998,2023
+        Lynk & Co,2016,2023
+        Zeekr,2021,2023
+        Shanghai Maple Guorun Automobile,2003,2023
+    Great Wall Motors,1984,2023
+        Haval
+        ORA,2018,2023
+    GAC Group,1954,2023
+        Changfeng Motor
+        Everus,2010,2023
+        Gonow
+        Trumpchi
+    Hawtai (Huatai
+    Huachen (Brilliance
+        Jinbei,1992,2023
+    Hwanghai
+    JAC Motors,1964,2023
+        JAC
+        Heyue
+        Refine
+    Jiangling,1993,2023
+        JMC
+        Yusheng
+    Jonway [de],2005,2023
+    Landwind
+    Lifan,2005,2023
+        Huayang
+    Nio,2014,2023
+    Qoros,2013,2023
+    SAIC Motor
+        Baojun,2010,2023
+        Maxus
+        MG Motor
+        Yuejin,1995,2023
+        Roewe,2006,2023
+        Wuling,1958,2023
+    Shaanxi Automobile Group
+    Sichuan Tengzhong
+    Soueast Motors / Dongnan
+    Xinkai,1984,2023
+    XPeng,2014,2023
+    Yema Auto,1994,2023
+    Yutong
+    ZX Auto,1999,2023
+
+    Dadi,1988,2012
+    Baolong,1998,2005
+    Polarsun Automobile,2004,2018
+    Senova,2012,2020
+    Shuanghuan,1998,2016
+    Youngman,2001,2019
+    Zotye,2005,2021
+
+    Đuro Đaković
+    DOK-ING
+    Rimac
+
+    Tvornica Autobusa Zagreb
+
+    Avia,1919,2023
+	IVECO Bus
+    Jawa,1929,2023
+    Kaipan,1997,2023
+    Karosa,1896,2023
+    MTX / Metalex,1969,2023
+    MW Motors,2010,2023
+    Praga,1907,2023
+    Škoda,1895,2023
+    Tatra,1850,2023
+
+    Aero,1929,1947
+    Aspa,1924,25
+    Gatter,1926–37
+    LIAZ,1951,2002
+    Stelka,1920,1922
+    Velorex,1951,1971
+    Walter,1909,1954
+    Wikov,1922–35
+    Zbrojovka Brno,1923–36
+
+    PVP Karting
+    Zenvo Automotive,2004,2023
+
+    Anglo-Dane,1902,1917
+    Brems,1900 and 1907
+    Dansk,1901,1907
+    Krampers,1890,1960
+
+    Speranza,1998,2023
+
+    Nasr,1960,2008
+
+    Nobe
+
+    Holland Car,2005,2013
+
+    Elcat
+    Electric Raceabout (prototype, not in production
+    Korvensuu,1912,1913
+    Sisu Auto
+    Valmet Automotive
+    Vanaja,1943,1968
+    Valtra
+
+    Aixam
+    Alpine
+    Bolloré
+    Bugatti
+    Chatenet
+    Citroën
+    De la Chapelle
+    DS
+    Goupil
+    Ligier
+    Microcar
+    Peugeot
+    PGO
+    Renault
+    Venturi
+
+    Amilcar,1921,1939
+    Ballot,1905,1932
+    Berliet,1899,1978
+    Chenard-Walcker,1899,1946
+    Darracq,1897,1902
+    DB,1938,1961
+    De Dion-Bouton,1883,1932
+    Delage,1906,1953
+    Delahaye,1894,1954
+    Facel Vega,1939,1964
+    Gobron-Brillié,1898,1930
+    Hotchkiss,1903,1955
+    Lorraine-Dietrich,1836,1945
+    Matra,1964,2003
+    Panhard,1887,2012
+    Panhard et Levassor,1887,1940
+    Rosengart,1927,1955
+    Salmson,1920,1957
+    Saviem,1955,1978
+    Simca,1934,1979
+    Talbot,1916,1959
+    Talbot-Lago,1935,1959
+    Tracta,1926,1934
+    VELAM,1955,1959
+    Vespa
+    Voisin,1919,1939
+
+    9ff
+    ABT Sportsline
+    Audi,1909,2023
+    Alpina
+    Artega
+    BMW,1926,2023
+    BMW M
+    CityEl
+    Ford-Werke
+    Gemballa,1985,2018
+    Isdera
+    Lotec
+    Magirus
+    MAN
+    Maybach
+    Mercedes-AMG,1967,2023
+    Mercedes-Benz,1886,2023
+    Opel,1899,2023
+    Porsche,1929,2023
+    Ruf,1979,2023
+    Smart,1994,2023
+    Volkswagen,1937,2023
+    Wiesmann
+
+    Amphicar,1960,1968
+    Apal
+    Auto Union,1932,1969
+    Bitter
+	Czechoslovakia,1926,1937
+    DKW
+    Gatter,1952,1958 
+    Glas,1883,1966
+    Goliath,1928,1961
+    Hansa,1905,1931
+    Heinkel,1956,1958
+    Horch,1904,1932
+    Lloyd,1908,1963
+    Maybach,1909,2013
+    Mercedes,1900,1926
+    Messerschmitt,1953,1964
+    NSU,1873,1969
+    Trabant,1957,1991
+    VW-Porsche,1969,1976
+    Wanderer,1911,1941
+    Wartburg,1898,1991
+	
+    ELVO,1973,2023
+    Kioleides,1968,2023
+    Keraboss,2011,2023)]
+    Korres,2002,2023
+    Namco,1973,2023
+    Replicar Hellas,2007,2023
+    Spyros Panapoulos Automotive,2019,2023
+
+    Alta,1968,1978
+    Attica,1958,1972
+    Autokinitoviomihania Ellados,1975,1984
+    Automeccanica,1980,1995
+    Balkania,1975,1995
+    BET,1965,1975
+    Biamax,1956,1986
+    C.AR,1970,1992
+    Candia,1965,1990
+    Diana,1976,1990
+    DIM,1977,1982
+    EBIAM,1979,1984
+    Enfield,1973,1976
+    Hercules,1980,1983
+    MAVA-Renault,1979,1985
+    MEBEA,1960,1983
+    Neorion,1974,1975
+    Pan-Car,1968,1994
+    Record,1957,1999
+    Saracakis,1962,2023
+    Scavas,1973,1992
+    Styl Kar,1970
+    Tangalakis,1935,1939
+    Theologou,1915,1926
+
+    Tata Motors
+    Mahindra & Mahindra
+    Maruti Suzuki
+    Force Motors
+
+    Chinkara Motors,2003-2016
+    Hindustan Motors,1963,2014
+    ICML,2012,2018
+    Maruti,1983,2007
+    Premier,1947,2016
+    Reva
+    Sipani Motors,1973,1995
+    Standard,1949,1988
+	Sunrise Auto Industries
+
+    Esemka
+    Pindad
+
+    Timor
+
+    Bahman
+    Diar
+    Iran Khodro,1962,2023
+    Khodro Kaveer
+    Kish Khodro
+    Morattab
+    MVM
+    Pars Khodro,1967,2023
+    Paykan
+    SAIPA,1966,2023
+    Shahab Khodro
+    Zagross Khodro
+
+    Shamrock
+    TMC Costin
+
+    Alesbury,1907,1908
+    GAC Ireland,1980,1986
+
+    AIL
+    Plasan
+
+    Autocars
+    Kaiser-Ilin Industries
+
+    Abarth,1949,2023
+    Alfa Romeo,1910,2023
+    Casalini,1939,2023
+    Cizeta,1988,2003
+    De Tomaso,1959,2023
+    DR,2007,2023
+    Ferrari,1947,2023
+    Fiat,1899,2023
+    F&M,2002,2009
+    Giannini
+    Giottiline
+    Grecav,1964,2012
+    Italdesign,1968,2023
+    Iveco,1975,2023
+    Lamborghini,1963,2023
+    Lancia,1906,2023
+    Maserati,1926,2023
+    Mazzanti,2010,2023
+    Pagani,1998,2023
+    Piaggio,1943,2023
+    Pininfarina
+    Qvale,2000,2002
+    RUF,1979,2023
+    Spada Vetture Sport,2007,2011
+
+    ASA,1961,1969
+    Autobianchi,1955,1995
+    Bertone,1982,1989
+    Bizzarrini,1964,1969
+    Cisitalia,1946,1963
+    Covini,1978,2016
+    Innocenti,1920,1996
+    Intermeccanica (moved to Canada
+    Iso,1953,1974
+    O.S.C.A.,1947,1967
+    Siata,1926,1970
+
+    Baby-Brousse,1964,1979
+
+    Aspark,2017,2023
+    Daihatsu,1951,2023
+    Datsun,1931,2023
+    Lexus,1989,2023
+    Honda,1951,2023
+    Acura,1986,2023
+    Isuzu,1937,2023
+    Mazda,1931,2023
+    Mitsubishi,1917,2023
+    Mitsuoka,1993,2023
+    Nissan,1933,2023
+    GT-R,2000,2023
+    Nismo,1983,2023
+    Infiniti,1989,2023
+    Subaru,1953,2023
+    Suzuki,1909,2023
+    Toyota,1935,2023
+    Yamaha Motor,1954,2023
+
+    Autozam,1989,1998
+    Colt,1974,1984
+    ɛ̃fini,1991,1997
+    Eunos,1989,1996
+    Hino,1961,1967
+    Prince,1952,1966
+    Scion,2003,2016
+    Toyopet
+
+    Mobius,2013,2023
+    Nyayo,1986,1999
+
+    Jehle
+    Orca
+
+    Bufori
+    Proton
+    Perodua
+    TD2000
+    Inokom
+    Naza
+    Hicom
+
+    Dina
+    Mastretta
+    VAM
+
+    Uri-Automobile,1995,2008
+
+    Hulas Motors
+
+    Donkervoort
+    Van Doorne's Automobiel Fabrieken
+    Savage Rivale,2012,2023
+    Spyker,1999,2023
+    Vencer
+
+    DAF
+    Spyker,1899,1926
+    Eysink
+    VDL Nedcar
+
+    Almac,1985,2023
+    Alternative Cars,1984,2023
+    Chevron,1984,2023
+    Fraser,1988,2023
+    Hulme,2005,2023
+    Leitch,1986,2023
+    Saker,1989,2023
+
+    Anziel,1967
+    Beattie,1997,2001
+    Carlton,1922,1928
+    Cobra,1983,1990
+    Crowther,1968,1978
+    De Joux,1970
+    Dennison,1900,1905
+    Everson,1935,1989
+    Heron,1964,1990
+    Marlborough,1912,1922
+    McRae,1990,2003
+    Mistral,1957,1960
+    Redline,2001,2009
+    Steel Brothers,1973,1981
+    Trekka,1966,1973
+    UltraCommuter,2006,2013
+    Wood,1901,1903
+
+    Izuogu,1997,2006
+    Innoson Vehicle Manufacturing
+
+    Pyeonghwa Motors
+    Pyongsang Auto Works
+    Sungri Motors
+
+    Comsove
+
+    Kongsberg
+
+    Bjering
+    Buddy
+    Geijer
+    Norsk
+    Think
+    Troll
+
+    Atlas Honda
+    Honda Atlas Cars Pakistan
+    FAW Pakistan
+    Ghandhara Nissan
+    Ghandhara Industries
+    Heavy Industries Taxila
+    Hinopak
+    Master
+    Millat Tractors
+    Pak Suzuki
+    Indus Motors Company
+    Yamaha Motor Pakistan
+    Sazgar
+    Hyundai Nishat Motors
+    Kia Lucky Motors
+    United Auto Industries
+    Prince DFSK
+    MG JW Automobile
+    Yutong Master
+
+    Adam Motor Company
+    Nexus Automotive
+    Dewan Farooque Motors
+
+    Arrinera,2001,2015
+    FSO,1925,2002
+    Melex
+    Polski Fiat,1932,1939, 1968,1992
+
+    UMM,1978,2001
+    Portaro,1975,1995
+
+    Dacia,1966,2023
+    Ford Romania,2008,2023
+
+    Oltcit,1976,1991
+    ARO,1957,2006
+    Daewoo Automobile S.A.,1991,2001
+    El Car
+
+
+    Atom,2022,2023
+    Aurus Motors,2018,2023
+    Evolute,2022,2023
+    GAZ,1932,2023
+    Lada,1966,2023
+    Moskvich,1930,2023
+    KamAZ,1969,2023
+    UAZ,1941,2023
+    Sollers,2022,2023
+
+    Derways,2003,2019
+    Izh,1965,2008
+    Marussia,2007,2014
+    Russo-Balt,1894,1929/2006
+    TagAZ,1997,2014
+    ZiL,1916,2013
+
+    Ceer Motors,2022,2023
+
+    FCA Srbija,2008,2023
+    Zastava TERVO,2017,2023
+
+    IDA-Opel,1977,1992
+    Yugo,1944,2008
+    Zastava,1953,2008
+
+    Revoz
+
+    TAM,1947,2011). Tushek Sportscars 
+
+    Birkin,1982,2023
+    Perana,2007,2023
+    Puma,1973,1974, 1989,1991, 2006,2023
+    Shaka,1995,2023
+    Superformance,1996,2023
+    Uri International Vehicle & Equipment Marketing,2008,2023
+
+    Eagle
+    GSM,1958,1964
+    Hayden Dart,1997,2003
+    Hi-Tech,1992,1996
+    Optimal Energy,2008,2012
+    Perana,1967,1996
+    Protea,1957,1958
+    Ranger,1968,1973
+    Sao,1985,1994
+
+    Chevrolet Korea,2004,2023
+    CT&T,2002,2023
+    Genesis,2007,2023
+    Hyundai,1968,2023
+	KG Mobility
+    Kia,1962,2023
+    Renault Samsung,1994,2023
+    Ssangyong,1988,2023
+
+    Asia,1965,1999
+    Daewoo,1983,2002
+    GMK,1972,1976
+    Proto,1997,2017
+    Saehan,1976,1983
+    Saenara,1962,1965
+    Shinjin,1965,1972
+    Spirra 
+
+    Aspid
+    Comarth
+    Cupra,1999,2023
+    Gerard Farre
+    GTA Motor
+    Hurtan
+    SEAT,1953,2023
+    Spania GTA
+    Tramontana 
+    Tauro Sport Auto,2012,2023
+    UROVESA
+
+    Hispano Suiza
+    Pegaso
+    Santana
+
+    Volvo Cars,1927,2023
+    Koenigsegg,1994,2023
+    Polestar,1996,2023
+    NEVS,2012,2023
+
+    Rengsjöbilen,1914,1916
+    Saab,1945,2012
+    Hult Healey,1984,1990
+    Jösse Car,1994,1999
+    Tjorven,1968,1971
+
+
+    MBM,1960,1967
+    Monteverdi,1967,1984
+    Ranger,1970,1975
+    Rinspeed,1978,2023
+
+    CMC,1973,2023
+    Formosa
+    Luxgen
+    Thunder Power
+    Yue Long/Yulon/YLN (affiliated to Nissan
+
+    Thai Rung
+
+
+    Industries Mécaniques Maghrébines,1982,1988, 1991,2023
+    Wallyscar,2007,2023)[2]
+
+
+    Anadol
+    Devrim
+    Diardi
+    Etox
+    Özaltin
+    Tofaş,1968–date
+    TOGG
+
+
+    Kiira
+
+
+    ZAZ,1923,2023
+
+    Devel Motors
+    W Motors
+
+
+    AC Cars,1901,2023
+    Arash
+    Ariel,1991,2023
+    Aston Martin,1913,2023
+    Briggs Automotive Company (BAC
+    Bentley,1919,2023
+    Bristol
+    Caterham Cars,1957,2023
+    David Brown,2013,2023
+    Ginetta,1958,2023
+    Jaguar,1935,2023)[3]
+    Jowett,1906,1954
+    Keating Supercars,2006,2023
+    Lagonda
+    Land Rover,1948,2023
+    Lister
+    London Electric Vehicle Company (LEVC),2013,2023
+    Lotus,1952,2023
+    Mini
+    McLaren,2010,2023
+    Morgan,1910,2023
+    Noble,1999,2023
+    Radical,1997,2023
+    Rolls-Royce,1904,2023
+    Trident
+    TVR,1946,2006,2013,2023
+    Vauxhall,1903,2023)[4]
+
+    Albion,1899,1972
+    Allard,1945,1957
+    Alvis
+    Armstrong Siddeley
+    Ascari,1995,2010
+    Austin
+    Austin-Healey,1952,1972
+    Berkeley,1956,1960
+    Bond
+    Bristol,1945,2020
+    British Salmson,1934,1939
+    Buckler,1947,1962
+    Chambers Motors,1904,1929
+    Chrysler Europe,1976,1979
+    Clan,1971,1974
+    Crossley,1906,1958
+    Daimler
+    Dellow,1949,1956
+    Durant (Produced the Star, 1922,1928
+    Dutton
+    Elva
+    Fairthorpe
+    Farboud Limited,1999,2006
+    Frazer Nash,1925,1957
+    Gilbern,1959,1973
+    Gordon-Keeble
+    Healey
+    Hillman
+    Humber
+    Invacar
+    Invicta
+    Jensen
+    Jowett,1906,1954
+    Lanchester
+    Lea-Francis
+    Lloyd,1936,1950
+    Lotus-Cortina
+    Marauder,1950,1952
+    MG,1924,2011
+    Metropolitan,1953,1961
+    Midas
+    Morris,1913,1984
+    Nash-Healey,1951,1954
+    Panther,1972,1990
+    Paramount,1950,1956
+    Peel Engineering Company,1955,1969
+    Peerless,1957,1960
+    Princess,1957,1960, 1975,1981
+    Reliant
+    Riley,1907,1969
+    Rover,1904,2005
+    RW,1983,2000
+    Singer
+    Spartan,1973,1995
+    Standard
+    Sunbeam
+    Sunbeam-Talbot
+    Swallow,1954,1955
+    Talbot
+    Tornado
+    Triumph
+    Trojan
+    Turner
+    Tyrrell
+    Vanden Plas
+    Warwick,1960,1962
+    Wolseley
+
+United States
+
+    AM General,1971,2023
+    Anteros,2005,2023
+    Arcimoto,2007,2023
+    Aurica,2010,2023
+    Bollinger Motors,2014,2023
+    Bremach,2009,2023
+    Buick,1903,2023
+    Cadillac,1902,2023
+    Chevrolet,1911,2023
+    Chrysler,1925,2023
+    Czinger,2019,2023
+    DeLorean Motor Company,1981,1983, 2022,2023
+    Dodge,1900,2023
+    Elio Motors,2009,2023
+    Equus Automotive,2014,2023
+    E-Z-GO,1954,2023
+    Falcon,2009,2023
+    Faraday,2014,2023
+    Ford,1903,2023
+    General Motors,1908,2023
+    GMC,1913,2023
+    Hennessey,1991,2023
+    Jeep,1941,2023
+    Karma,2016,2023
+    Lincoln,1917,2023
+    Lucid,2014,2023
+    Lyons,2011,2023
+    Opel,1941,2023
+    Panoz,1989,2023
+    Polaris,1954,2023
+    Racefab,1991,2023
+    RAESR,2014,2023
+    Ram Trucks,2010,2023
+    Rezvani,2014,2023
+    Rivian,2009,2023
+    Rossion,2007,2023
+    Saleen,1980,2023
+    Scuderia Cameron Glickenhaus
+    Shelby American,1962,2023
+    SSC,1999,2023
+    Tesla,2003,2023
+    Trion Supercars,2012,2023
+    Vehicle Production Group,2011,2013
+    Zimmer,1978,1988, 1997,2023
+
+    Ajax,1925,1926
+    AMC,1954,1987
+    American Simplex,1906,1910
+    Amplex,1910,1915
+    Auburn
+    Checker
+    Coda,2009,2016
+    Cord
+    Crosley
+    DeSoto,1928,1960
+    Detroit Electric,1907,1939
+    Devon,2008,2013
+    Duesenberg
+    Eagle,1987,1998
+    Edsel,1958,1960
+    Frazer
+    Fisker,2011,2014
+    Geo (General Motors brand),1989,1997
+    Hudson,1909,1957
+    Hummer,1992,2010
+    Hupmobile,1909,1939
+    Imperial,1955,1975, 1981,1983) (Chrysler Corporation brand – Imperial was also used as a Chrysler model name in certain other years
+    Jordan
+    Kaiser
+    LaFayette
+    LaSalle,1927,1940
+    Local,2007—2022
+    Marmon,1851,1933
+    Marquette (General Motors brand
+    Maxwell
+    Mercer,1909,1925
+    Mercury,1938,2011
+    Merkur,1985,1989
+    Moon
+    Mosler,1993,2013
+    Nash
+    Navistar International
+    Oakland,1908,1931
+    Oldsmobile,1897,2004
+    Packard,1899,1958
+    Plymouth,1928,2001
+    Pontiac,1926,2010
+    Rambler,1897,1914 & 1958,1969
+    Saturn,1985,2010
+    Staver,1907,1914
+    Stearns-Knight
+    Studebaker,1852,1967
+    Vector,1989,1993
+    Wheego,2009,2013
+    Willys,1908,1963
+
+    ChienThang
+    THACO
+    VinFast
+
+    Vinaxuki,2004,2015)

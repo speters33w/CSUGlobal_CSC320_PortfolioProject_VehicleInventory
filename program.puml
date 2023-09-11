@@ -1,0 +1,45 @@
+@startuml
+class edu.csuglobal.AutomobileInventory {
+- ArrayList<Automobile> inventory
+- String makesList
++ ArrayList<Automobile> getInventory()
++ void menu(Scanner,ArrayList<Automobile>)
++ AutomobileInventory addAutomobile(AutomobileInventory,Automobile)
++ ArrayList<Automobile> addAutomobile(Scanner,ArrayList<Automobile>)
++ ArrayList<Automobile> removeAutomobile(Scanner,ArrayList<Automobile>)
++ ArrayList<Automobile> removeAutomobile(ArrayList<Automobile>,String)
++ ArrayList<Automobile> updateAutomobile(Scanner,ArrayList<Automobile>)
++ ArrayList<Automobile> importInventory(Scanner,ArrayList<Automobile>,boolean)
++ boolean checkVin(String,ArrayList<Automobile>)
++ void listInventory(Scanner,ArrayList<Automobile>)
++ void saveInventory(Scanner,ArrayList<Automobile>)
++ void quit(Scanner,ArrayList<Automobile>)
++ {static} void automobileInventory()
++ {static} void main(String[])
+}
+class edu.csuglobal.Automobile {
+- String vin
+- String make
+- String model
+- String color
+- Year year
+- int mileage
++ <<Create>> Automobile()
++ <<Create>> Automobile(String,String,String,String,Year,int)
++ void setVin(String)
++ void setMake(String)
++ void setModel(String)
++ void setColor(String)
++ void setYear(Year)
++ void setMileage(int)
++ String getVin()
++ String getMake()
++ String getModel()
++ String getColor()
++ Year getYear()
++ String getYearAsString()
++ int getMileage()
++ String[] getAutomobile()
++ String toString()
+}
+@enduml

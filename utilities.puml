@@ -1,0 +1,10 @@
+@startuml
+class util.speters33w.SearchTools {
++ {static} List<String> fuzzySearch(List<String>,String)
++ {static} List<String> fuzzySearch(List<String>,String,int)
++ {static} void possibleMatches(List<String>,String)
+}
+class util.speters33w.ANSIColor {
++ {static} String color(String)
+}
+@enduml
