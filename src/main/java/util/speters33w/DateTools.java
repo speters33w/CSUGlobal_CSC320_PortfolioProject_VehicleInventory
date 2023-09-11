@@ -3,7 +3,7 @@ package util.speters33w;
 import java.time.LocalDateTime;
 
 /**
- * Tools to manipulate the current date and time.
+ * Tools to manipulate the current date and time format.
  * Written for a CSUGlobal project, but portable across other projects.
  * @author Stephan Peters (speters33w)
  **/
@@ -40,7 +40,7 @@ public class DateTools {
 
 
     /**
-     * Used to test the DateTools class.
+     * Main method used to test the DateTools class.
      * @param args Command line arguments.
      */
     public static void main(String[] args) {

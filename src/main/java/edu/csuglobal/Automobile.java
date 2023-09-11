@@ -2,7 +2,7 @@ package edu.csuglobal;
 
 // Removed lombok because Eclipse is the suggested IDE for the course.
 // Eclipse requires modification to use lombok,
-// and may not run on the instructor's machine for grading.
+// and may not run on the instructor's machine for grading out-of-the-box.
 // import lombok.AllArgsConstructor;
 // import lombok.Getter;
 // import lombok.NoArgsConstructor;
@@ -15,6 +15,13 @@ import java.time.Year;
 
 /**
  * An automobile class used for dealer inventory.
+ * It stores the following fields:
+ * - VIN The VIN number of the automobile
+ * - Make The make of the automobile
+ * - Model The model of the automobile
+ * - Color The color of the automobile
+ * - Year The year of the automobile
+ * - Mileage The odometer reading of the automobile
  */
 //@Getter
 //@Setter

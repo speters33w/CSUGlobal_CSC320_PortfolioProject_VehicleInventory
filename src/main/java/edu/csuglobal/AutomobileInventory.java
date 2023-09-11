@@ -160,6 +160,8 @@ public class AutomobileInventory {
      * Prints a record of the automobile to the console.
      * Returns the updated AutomobileInventory.
      *
+     * @param automobileInventory the AutomobileInventory to update.
+     * @param automobile the automobile to create and add.
      * @return AutomobileInventory the updated AutomobileInventory.
      */
     public AutomobileInventory addAutomobile(AutomobileInventory automobileInventory, Automobile automobile) {
@@ -177,6 +179,7 @@ public class AutomobileInventory {
      * Prints a record of the automobile to the console.
      *
      * @param input The user's input.
+     * @param inventory The current inventory.
      * @return The automobile that was added.
      */
     public ArrayList<Automobile> addAutomobile(Scanner input, ArrayList<Automobile> inventory) {
@@ -316,6 +319,7 @@ public class AutomobileInventory {
      *
      * @param input      Scanner for user input.
      * @param automobile the automobile object to be updated.
+     * @return the updated Automobile with the updated color.
      **/
     Automobile addColor(Scanner input, Automobile automobile) {
         // Adds user-entered color to the Automobile, color must be a valid color from Colors enum.
@@ -351,6 +355,7 @@ public class AutomobileInventory {
      *
      * @param input      scanner for user input.
      * @param automobile the automobile object to be updated.
+     * @return the updated Automobile with the updated year.
      **/
     Automobile addYear(Scanner input, Automobile automobile) {
         // Adds user-entered year to the Automobile, year must be a valid year.
@@ -547,6 +552,7 @@ public class AutomobileInventory {
      * @param input         scanner for user input
      * @param inventory     the automobile inventory
      * @param initialImport true on program initialization, imports the default database if true.
+     * @return the imported automobile inventory
      */
     public ArrayList<Automobile> importInventory(Scanner input, ArrayList<Automobile> inventory, boolean initialImport) {
         File file = new File("automobileInventory.adb");
@@ -623,20 +629,26 @@ public class AutomobileInventory {
     /**
      * Lists the automobiles in the inventory.
      * If the inventory is empty, it will print an error message to the console.
+     * Creates a String[] of automobiles.
      *
      * @param input     Scanner used to prompt the user for input.
      * @param inventory The current inventory.
+     * @return a String array of the automobiles.
      */
-    public void listInventory(Scanner input, ArrayList<Automobile> inventory) {
+    public String[] listInventory(Scanner input, ArrayList<Automobile> inventory) {
+        String[] inventoryAsStrings = new String[inventory.size()];
         if (inventory.size() == 0) {
             System.out.printf("%sThere are no automobiles in the inventory.%s%n",
                     color("red"), color("reset"));
         }
+        int count = 0;
         for (Automobile automobile : inventory) {
             System.out.println(automobile.toString());
+            inventoryAsStrings[count++] = automobile.toString();
         }
         System.out.print("\nType any key to continue: ");
         input.nextLine();
+        return inventoryAsStrings;
     }
 
     /**
@@ -735,6 +747,11 @@ public class AutomobileInventory {
         input.close();
     }
 
+    /**
+     * Runnable main method for the automobileInventory class.
+     *
+     * @param args command line arguments (not used).
+     */
     public static void main(String[] args) {
         automobileInventory();
     }
