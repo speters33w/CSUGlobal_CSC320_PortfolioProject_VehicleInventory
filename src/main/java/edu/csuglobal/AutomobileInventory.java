@@ -30,6 +30,7 @@ import static util.speters33w.SearchTools.possibleMatches;
 public class AutomobileInventory {
     private ArrayList<Automobile> inventory = new ArrayList<>();
     private String makesList;
+    boolean overrideMake = true;
 
     public ArrayList<Automobile> getInventory() {
         return inventory;
@@ -37,7 +38,12 @@ public class AutomobileInventory {
 
     /**
      * Main menu for the Automobile Inventory program.
-     * @param input Scanner for user input.
+     * Allows the user to add, remove, update, import, list, and save automobiles, or quit.
+     * Prints a list of menu options to the console.
+     * Takes the first character from the user's input and processes it through a switch statement.
+     * Recursively reloads the menu after performing operations.
+     *
+     * @param input     Scanner for user input.
      * @param inventory ArrayList of automobiles in current inventory.
      */
     public void menu(Scanner input, ArrayList<Automobile> inventory) {
@@ -51,7 +57,12 @@ public class AutomobileInventory {
         System.out.printf("%s[S]ave automobiles%s%n", color("green"), color("reset"));
         System.out.printf("%s[Q]uit%s%n", color("green"), color("reset"));
         System.out.print("Enter an option: ");
-        String option = input.nextLine().substring(0, 1).toUpperCase();
+        String option = input.nextLine();
+        if (!option.isEmpty()) {
+            option = option.substring(0, 1).toUpperCase();
+        } else {
+            menu(input, inventory);
+        }
         switch (option) {
             case "A":
                 inventory = addAutomobile(input, inventory);
@@ -93,47 +104,14 @@ public class AutomobileInventory {
     }
 
     /**
-     * This method adds an automobile to an AutomobileInventory object, and returns the AutomobileInventory object.
-     */
-    public AutomobileInventory addAutomobile(AutomobileInventory automobileInventory, Automobile automobile) {
-        automobileInventory.inventory.add(automobile);
-        System.out.printf("%sSuccessfully added %s.%s%n",
-                color("cyan"), automobile, color("reset"));
-        return automobileInventory;
-    }
-
-    /**
-     * Allows the user to add a new automobile to the inventory.
-     * Provides some input verification.
+     * Imports a list of valid automobile makes from a file.
+     * Allows the user to select the list makes from a file chooser dialogue.
+     * Validates the list using a simple keyword at the beginning of the file.
+     * Returns null if there is no valid makes list chosen.
      *
-     * @param input The user's input.
-     * @return The automobile that was added.
+     * @return the list of valid automobile makes.
      */
-    public ArrayList<Automobile> addAutomobile(Scanner input, ArrayList<Automobile> inventory) {
-
-        Automobile automobile = new Automobile();
-
-        // Checks to ensure the user has entered a non-duplicate VIN, and adds the VIN to the automobile.
-        boolean valid;
-        do {
-            valid = true;
-            System.out.print("Enter the VIN of the automobile: ");
-            String vin = input.nextLine().toUpperCase();
-            for (Automobile auto : inventory) {
-                if (vin.equalsIgnoreCase("quit")) {
-                    return inventory;
-                }
-                // If this were a production program, better VIN validation would need to be used.
-                if (vin.isEmpty() || auto.getVin().equalsIgnoreCase(vin)) {
-                    System.out.printf("%sInvalid VIN, or VIN already exists.%s%n",
-                            color("red"), color("reset"));
-                    System.out.print("Retype VIN, or type quit to exit.\n");
-                    valid = false;
-                }
-            }
-            automobile.setVin(vin);
-        } while (!valid);
-
+    List<String> importMakesList() {
         // Allows the user to select a list of valid automobile makes from a file chooser.
         File file = new File("auto_brands_us.list");
         if (makesList == null) {
@@ -154,11 +132,11 @@ public class AutomobileInventory {
                         color("blue"), file.getPath(), color("reset"));
             }
             this.makesList = file.getPath();
+            this.overrideMake = false;
         }
 
-        // Reads the file into an ArrayList for input validation.
+        // Reads the automobile makes list file into an ArrayList for input validation.
         List<String> autoMakesList = new ArrayList<>();
-        boolean overrideMake = false;
         try {
             FileReader makesList = new FileReader(file);
             Iterable<CSVRecord> make = CSVFormat.DEFAULT.parse(makesList);
@@ -166,29 +144,129 @@ public class AutomobileInventory {
             if (!autoMakesList.contains("AutomobileInventoryMakeList")) {
                 System.out.printf("%sInvalid list of valid automobile makes.%s%n",
                         color("red"), color("reset"));
-                this.makesList = null;
-                return inventory;
+                this.overrideMake = true;
             }
 
-        } catch (IOException e) {
+        } catch (IOException ioe) {
             System.out.printf("%sInvalid list of valid automobile makes.%s%n",
                     color("red"), color("reset"));
-            overrideMake = true;
+            this.overrideMake = true;
         }
+        return autoMakesList;
+    }
 
-        String make = "";
+    /**
+     * Adds an automobile to an AutomobileInventory.
+     * Prints a record of the automobile to the console.
+     * Returns the updated AutomobileInventory.
+     *
+     * @return AutomobileInventory the updated AutomobileInventory.
+     */
+    public AutomobileInventory addAutomobile(AutomobileInventory automobileInventory, Automobile automobile) {
+        automobileInventory.inventory.add(automobile);
+        System.out.printf("%sSuccessfully added %s.%s%n",
+                color("cyan"), automobile, color("reset"));
+        return automobileInventory;
+    }
 
-        // Checks if the user has entered a valid make, if so, adds the make to the automobile.
+    /**
+     * Allows the user to add a new automobile to the inventory.
+     * VIN is entered directly in this method, and may not be altered after Automobile record creation.
+     * VIN is checked against the inventory for duplicates or blanks.
+     * Provides some input verification of the make, color, and year through the called methods.
+     * Prints a record of the automobile to the console.
+     *
+     * @param input The user's input.
+     * @return The automobile that was added.
+     */
+    public ArrayList<Automobile> addAutomobile(Scanner input, ArrayList<Automobile> inventory) {
 
+        importMakesList();
+        Automobile automobile = new Automobile();
+
+        boolean valid;
         do {
             valid = true;
+            System.out.print("Enter the VIN of the automobile: ");
+            String vin = input.nextLine().toUpperCase();
+            if (vin.equalsIgnoreCase("quit")) {
+                return inventory;
+            }
+            // If this were a production program, better VIN validation would need to be used.
+            if (vin.isEmpty() || duplicateVin(vin, inventory)) {
+                System.out.printf("%sInvalid VIN, or VIN already exists.%s%n",
+                        color("red"), color("reset"));
+                System.out.print("Retype VIN, or type quit to exit.\n");
+                valid = false;
+            }
+            automobile.setVin(vin);
+        } while (!valid);
+
+        automobile = addMake(input, automobile);
+        automobile = addModel(input, automobile);
+        automobile = addColor(input, automobile);
+        automobile = addYear(input, automobile);
+        automobile = addMileage(input, automobile);
+
+        inventory.add(automobile);
+        System.out.printf("%sSuccessfully added %s.%s%n",
+                color("cyan"), automobile, color("reset"));
+        return inventory;
+    }
+
+    /**
+     * Used to check for duplicate VINs in the inventory.
+     * importInventory will ignore duplicate VIN records.
+     *
+     * @param vin       The VIN from an imported file to check
+     * @param inventory The current inventory
+     * @return true if the VIN is already in the inventory, false otherwise
+     */
+    public boolean duplicateVin(String vin, ArrayList<Automobile> inventory) {
+        for (Automobile automobile : inventory) {
+            if (automobile.getVin().equalsIgnoreCase(vin)) {
+                System.out.printf("%sDuplicate VIN found. Ignoring record. VIN: %s.%s%n",
+                        color("red"), vin, color("reset"));
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //todo move to updateAutomobile()
+    void AddVin(String customerSupport) {
+        System.out.print("The VIN may not be altered after Automobile record creation.\n" +
+                         "If the VIN is invalid, create a new record with the correct vin, " +
+                         "and delete the record with the incorrect vin.\n" +
+                         "You may contact customer support at " + customerSupport + ".\n");
+    }
+
+    /**
+     * Adds or updates the make of an automobile object.
+     * Prompts the user for a valid make from the automobile makesList.
+     * Suggests close matches if the user input does not match any of the automobile makes.
+     * Allows the user to override valid makes for makes not in the database,
+     *     and appends an asterisk to the make for database review.
+     *
+     * @param input      Scanner for user input.
+     * @param automobile the automobile object to be updated.
+     * @return the automobile with the updated make.
+     */
+    Automobile addMake(Scanner input, Automobile automobile) {
+
+        String make = "";
+        List<String> autoMakesList = importMakesList();
+        boolean validMake;
+
+        do {
+            validMake = true;
             System.out.print("Enter the make of the automobile: ");
             String makeEntered = input.nextLine();
             if (makeEntered.length() >= 2 && !Character.isUpperCase(makeEntered.charAt(1))) {
                 makeEntered = capitalizeFully(makeEntered, ' ', '-', '.');
             }
             if (makeEntered.equalsIgnoreCase("quit")) {
-                return inventory;
+                return automobile;
             }
             if (makeEntered.toUpperCase().contains("OVERRIDE")) {
                 make = make + " *"; // To make it easier to find overrides in a database.
@@ -202,12 +280,26 @@ public class AutomobileInventory {
                         color("red"), makeEntered, color("reset"));
                 possibleMatches(autoMakesList, makeEntered);
                 System.out.print("Retype make, type \"OVERRIDE\" to override validation or type \"quit\" to exit.\n");
-                valid = false;
+                validMake = false;
             }
             automobile.setMake(make);
-        } while (!valid);
+        } while (!validMake);
+        return automobile;
+    }
 
+    /**
+     * Adds or updates the model of an automobile.
+     * Prompts the user for a model.
+     * Corrects capitalization if user does not capitalize the first letter of the model.
+     * No validation is performed other than a check for an empty String.
+     *
+     * @param input      Scanner for user input.
+     * @param automobile the automobile object to be updated.
+     * @return the automobile with the updated model.
+     */
+    Automobile addModel(Scanner input, Automobile automobile) {
         // Adds a user entered model (no validation) to the Automobile.
+        boolean valid = true;
         do {
             System.out.print("Enter the model of the automobile: ");
             String model = input.nextLine();
@@ -222,8 +314,20 @@ public class AutomobileInventory {
             }
             automobile.setModel(model);
         } while (!valid);
+        return automobile;
+    }
 
+    /**
+     * Adds or updates the color of an automobile.
+     * Prompts the user for a valid color from the automobile Colors Enum.
+     * Suggests close matches if the user input does not match any of the automobile colors.
+     *
+     * @param input      Scanner for user input.
+     * @param automobile the automobile object to be updated.
+     **/
+    Automobile addColor(Scanner input, Automobile automobile) {
         // Adds user-entered color to the Automobile, color must be a valid color from Colors enum.
+        boolean valid;
         do {
             System.out.print("Enter the color of the automobile: ");
             String carColor = input.nextLine().toUpperCase();
@@ -243,14 +347,31 @@ public class AutomobileInventory {
             automobile.setColor(carColor.substring(0, 1).toUpperCase() +
                                 carColor.substring(1).toLowerCase());
         } while (!valid);
+        return automobile;
+    }
 
+    /**
+     * Adds or updates the year of an automobile.
+     * Prompts the user for a valid year from the automobile Year as a four digit integer.
+     * Checks the year entered is between 1900 and the current year.
+     * Suggests close matches if the user input does not match any of the automobile years.
+     * Prompts user to enter -1 if year is unknown.
+     *
+     * @param input      scanner for user input.
+     * @param automobile the automobile object to be updated.
+     **/
+    Automobile addYear(Scanner input, Automobile automobile) {
         // Adds user-entered year to the Automobile, year must be a valid year.
+        boolean valid;
         do {
             Year year = null;
             System.out.print("Enter the model year of the automobile: ");
             String modelYearString = input.nextLine();
             try {
                 int modelYear = Integer.parseInt(modelYearString);
+                if (modelYear == -1) {
+                    break;
+                }
                 if (modelYear >= 1900 && modelYear <= Year.now().getValue()) {
                     year = Year.of(modelYear);
                     valid = true;
@@ -263,20 +384,32 @@ public class AutomobileInventory {
             } catch (NumberFormatException e) {
                 System.out.printf("%sInvalid model year.%s%n",
                         color("red"), color("reset"));
-                System.out.print("Retype year.\n");
+                System.out.print("Retype year.\nEnter -1 if model year is unknown or inaccurate.\n");
                 valid = false;
             }
             automobile.setYear(year);
         } while (!valid);
+        return automobile;
+    }
 
+    /**
+     * Adds or updates the odometer reading of an automobile.
+     * Allows the user to enter -1 if the odometer reading is invalid or unknown.
+     *
+     * @param input      Scanner for user input.
+     * @param automobile the automobile object to be updated.
+     * @return the automobile with the updated odometer reading.
+     */
+    Automobile addMileage(Scanner input, Automobile automobile) {
         // Adds user-entered odometer reading to the Automobile. Must be an integer.
+        boolean valid;
         do {
             int odometer = -1;
             System.out.print("Enter the odometer reading of the automobile: ");
             String odometerString = input.nextLine().replace(",", "");
             try {
                 odometer = Integer.parseInt(odometerString);
-                valid = true; // NOTE, dealer may use -1 for bad odometer readings and unknown values.
+                valid = odometer >= -1; // NOTE, dealer may use -1 for bad odometer readings and unknown values.
             } catch (NumberFormatException e) {
                 System.out.printf("%sInvalid odometer reading.%s%n",
                         color("red"), color("reset"));
@@ -285,15 +418,14 @@ public class AutomobileInventory {
             }
             automobile.setMileage(odometer);
         } while (!valid);
-
-        inventory.add(automobile);
-        System.out.printf("%sSuccessfully added %s.%s%n",
-                color("cyan"), automobile, color("reset"));
-        return inventory;
+        return automobile;
     }
 
     /**
      * Removes an automobile from the automobile inventory using the VIN.
+     * Requests a VIN from the user,
+     * then uses removeAutomobile(ArrayList&lt;Automobile&gt; inventory, String vin)
+     * to remove the automobile from the inventory.
      *
      * @param input     scanner for user input
      * @param inventory the automobile inventory
@@ -307,6 +439,9 @@ public class AutomobileInventory {
 
     /**
      * Removes an automobile from the automobile inventory using the VIN.
+     * Iterates through the automobile inventory until the VIN is found,
+     *     then removes the automobile from the inventory.
+     * If the inventory does not contain the VIN, it prints an error message to the console.
      *
      * @param inventory the automobile inventory
      * @param vin       the VIN of the automobile to be removed
@@ -368,12 +503,13 @@ public class AutomobileInventory {
 
         try {
             FileReader fileReader = new FileReader(file);
-            String filePath = file.getAbsolutePath();
-            System.out.printf("%s%s%s%n", color("green"), filePath, color("reset"));
+            String databasePath = file.getCanonicalPath();
+            System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
             if (initialImport) {
+                String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();  //todo check this on Linux
                 DateTools now = new DateTools();
                 String backupFilename = String.format("%s%s%s%s",
-                        filePath.substring(0, file.getAbsolutePath().length() - 4),
+                        filePath.substring(0, file.getCanonicalPath().length()),
                         "_", now.getTime(), ".bak");
                 System.out.printf("%sBacking up database, please wait...%s%n",
                         color("reset"), color("reset"));
@@ -391,7 +527,7 @@ public class AutomobileInventory {
                 boolean duplicateFlag;
                 Automobile automobile = new Automobile();
                 automobile.setVin(automobileRecord.get("vin"));
-                duplicateFlag = checkVin(automobile.getVin(), inventory);
+                duplicateFlag = duplicateVin(automobile.getVin(), inventory);
                 automobile.setMake(automobileRecord.get("make"));
                 automobile.setModel(automobileRecord.get("model"));
                 automobile.setColor(automobileRecord.get("color"));
@@ -414,28 +550,12 @@ public class AutomobileInventory {
         return inventory;
     }
 
-    /**
-     * Used to check for duplicate VINs in the inventory.
-     * importInventory will delete duplicate VIN records.
-     *
-     * @param vin       The VIN from an imported file to check
-     * @param inventory The current inventory
-     * @return true if the VIN is already in the inventory, false otherwise
-     */
-    public boolean checkVin(String vin, ArrayList<Automobile> inventory) {
-        for (Automobile automobile : inventory) {
-            if (automobile.getVin().equalsIgnoreCase(vin)) {
-                System.out.printf("%sDuplicate VIN found. Ignoring record. VIN: %s.%s%n",
-                        color("red"), vin, color("reset"));
-                return true;
-            }
-        }
-        return false;
-    }
 
     /**
      * Lists the automobiles in the inventory.
-     * @param input Scanner used to prompt the user for input.
+     * If the inventory is empty, it will print an error message to the console.
+     *
+     * @param input     Scanner used to prompt the user for input.
      * @param inventory The current inventory.
      */
     public void listInventory(Scanner input, ArrayList<Automobile> inventory) {
@@ -450,6 +570,15 @@ public class AutomobileInventory {
         input.nextLine();
     }
 
+    /**
+     * Saves the automobile inventory.
+     * This will overwrite the existing default database file.
+     * In the case of an exception, it will print an error message to the console,
+     *     and a list of the current inventory for possible salvage from the console log.
+     *
+     * @param input     Scanner to pass to listInventory in the case of an exception.
+     * @param inventory the Automobile inventory.
+     */
     public void saveInventory(Scanner input, ArrayList<Automobile> inventory) {
         try {
             FileWriter writer = new FileWriter("automobileInventory.adb");
@@ -468,8 +597,7 @@ public class AutomobileInventory {
             }
             System.out.printf("%s***** SAVE SUCCESSFUL! *****%s%n",
                     color("green"), color("reset"));
-            csvPrinter.flush();
-        // This does not throw an exception, but prints current records to console for possible salvage.
+            csvPrinter.close(true);
         } catch (IOException ioe) {
             System.out.printf("%n%s***** SAVE UNSUCCESSFUL! *****%s%n%n",
                     color("red"), color("reset"));
@@ -478,23 +606,32 @@ public class AutomobileInventory {
             System.out.printf("%s%s%s%n",
                     color("red"), "Current automobile inventory contains: ", color("reset"));
             listInventory(input, inventory);
+            System.out.print("\nType any key to continue: ");
         }
     }
 
     /**
-     * Prompts the user to save the automobile inventory, then quits the program.
-     * @param input Scanner used to prompt the user for input.
+     * Asks the user if the automobile inventory should be saved,
+     * if yes, saves the inventory, then quits the program if yes or no.
+     * If the entry does not begin with y or n, it will print an error message to the console and restart the method.
+     * There is no &quot;do you really want to quit?&quot; message,
+     *     user can re-run the program after quitting in error.
+     *
+     * @param input     Scanner used to prompt the user for input.
      * @param inventory the modified Automobile inventory.
      */
     public void quit(Scanner input, ArrayList<Automobile> inventory) {
         while (true) {
             System.out.println("Save your inventory? (y/n)");
-            String save = input.nextLine().toLowerCase();
-            if (save.equalsIgnoreCase("y")) {
-                saveInventory(input, inventory);
-                break;
-            } else if (save.equalsIgnoreCase("n")) {
-                break;
+            String yesNo = input.nextLine();
+            if (!yesNo.isEmpty()) {
+                yesNo = yesNo.toLowerCase().substring(0, 1);
+                if (yesNo.equalsIgnoreCase("y")) {
+                    saveInventory(input, inventory);
+                    break;
+                } else if (yesNo.equalsIgnoreCase("n")) {
+                    break;
+                }
             }
             System.out.printf("%sInvalid input. Please try again.%s%n",
                     color("red"), color("reset"));
@@ -505,6 +642,12 @@ public class AutomobileInventory {
 
     /**
      * This is the main entry method for the automobileInventory class.
+     * Creates a Scanner to be used throughout the program.
+     * Creates a new automobileInventory object.
+     * Creates a new ArrayList to be used throughout the program.
+     * Imports a default database file into the array list and creates a backup in the /bak/ directory.
+     * Prompts the user to start the automobileInventory program.
+     * Closes the Scanner and ends the program.
      */
     public static void automobileInventory() {
         Scanner input = new Scanner(System.in);

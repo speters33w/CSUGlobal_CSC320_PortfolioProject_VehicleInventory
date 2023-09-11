@@ -8,13 +8,13 @@ import java.time.LocalDateTime;
  * @author Stephan Peters (speters33w)
  **/
 public class DateTools {
-    LocalDateTime now;
-    int year;
-    int month;
-    int day;
-    int hour;
-    int minute;
-    int second;
+    private final LocalDateTime now;
+    private final int year;
+    private final int month;
+    private final int day;
+    private final int hour;
+    private final int minute;
+    private final int second;
 
     /**
      * Constructor.

@@ -39,5 +39,7 @@ build/
 
 ### Additional Ignored Files ###
 /tmp/
-/*.bak
+/bak/*.bak
+/bak/automobileInventory.original
 /src/main/java/example/
+

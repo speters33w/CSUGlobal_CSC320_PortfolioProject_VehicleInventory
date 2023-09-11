@@ -176,8 +176,8 @@ public class Automobile {
                "\", \"" + make +
                "\", \"" + model +
                "\", \"" + color +
-               "\", Year.of(" + getYearAsString() +
-               "), " + mileage +
+               "\", " + getYearAsString() +
+               ", " + mileage +
                ")";
     }
 }

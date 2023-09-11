@@ -4,6 +4,18 @@ class util.speters33w.SearchTools {
 + {static} List<String> fuzzySearch(List<String>,String,int)
 + {static} void possibleMatches(List<String>,String)
 }
+class util.speters33w.DateTools {
+- LocalDateTime now
+- int year
+- int month
+- int day
+- int hour
+- int minute
+- int second
++ <<Create>> DateTools()
++ String getTime()
++ {static} void main(String[])
+}
 class util.speters33w.ANSIColor {
 + {static} String color(String)
 }
