@@ -114,7 +114,7 @@ public class AutomobileInventory {
      * @return the imported automobile inventory
      */
     public ArrayList<Automobile> importInventory(Scanner input, ArrayList<Automobile> inventory, boolean initialImport) {
-        File file = new File("automobileInventory.adb");
+        File file = new File(System.getProperty("user.dir") + "/AutomobileInventory.adb");
         if (!initialImport) {
             String userDir = System.getProperty("user.dir");
             JFileChooser fileChooser = new JFileChooser(userDir);
@@ -140,7 +140,7 @@ public class AutomobileInventory {
             String databasePath = file.getCanonicalPath();
             System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
             if (initialImport) {
-                String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();  //todo check this on Linux
+                String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();
                 DateTools now = new DateTools();
                 String backupFilename = String.format("%s%s%s%s",
                         filePath.substring(0, file.getCanonicalPath().length()),
@@ -456,7 +456,6 @@ public class AutomobileInventory {
      * Adds or updates the year of an automobile.
      * Prompts the user for a valid year from the automobile Year as a four digit integer.
      * Checks the year entered is between 1900 and the current year.
-     * Suggests close matches if the user input does not match any of the automobile years.
      * Prompts user to enter -1 if year is unknown.
      *
      * @param input      scanner for user input.
