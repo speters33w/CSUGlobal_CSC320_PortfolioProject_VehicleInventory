@@ -1,0 +1,27 @@
+@startuml
+class Automobile {
+- String vin
+- String make
+- String model
+- String color
+- Year year
+- int mileage
++ <<Create>> Automobile()
++ <<Create>> Automobile(String,String,String,String,Year,int)
++ void setVin(String)
++ void setMake(String)
++ void setModel(String)
++ void setColor(String)
++ void setYear(Year)
++ void setMileage(int)
++ String getVin()
++ String getMake()
++ String getModel()
++ String getColor()
++ Year getYear()
++ String getYearAsString()
++ int getMileage()
++ String[] getAutomobile()
++ String toString()
+}
+@enduml

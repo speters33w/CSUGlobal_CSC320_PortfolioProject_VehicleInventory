@@ -104,6 +104,87 @@ public class AutomobileInventory {
     }
 
     /**
+     * Imports an automobile inventory from a CSV file.
+     * On program initiation, backs up the default file automobileInventory.adb, and imports the file into the program.
+     * If not during initialization, prompts the user to select a csv database file, limited to file extension adb.
+     *
+     * @param input         scanner for user input
+     * @param inventory     the automobile inventory
+     * @param initialImport true on program initialization, imports the default database if true.
+     * @return the imported automobile inventory
+     */
+    public ArrayList<Automobile> importInventory(Scanner input, ArrayList<Automobile> inventory, boolean initialImport) {
+        File file = new File("automobileInventory.adb");
+        if (!initialImport) {
+            String userDir = System.getProperty("user.dir");
+            JFileChooser fileChooser = new JFileChooser(userDir);
+            fileChooser.setAcceptAllFileFilterUsed(false);
+            FileFilter filter = new FileNameExtensionFilter("Automobile Database File", "adb");
+            fileChooser.setFileFilter(filter);
+            fileChooser.setDialogTitle("Select a database:");
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+            System.out.print("Select a database file to import: ");
+            int option = fileChooser.showOpenDialog(null);
+            if (option == JFileChooser.APPROVE_OPTION) {
+                file = fileChooser.getSelectedFile();
+                System.out.printf("%s%s%s%n", color("blue"), file.getName(), color("reset"));
+            } else {
+                System.out.printf("%sNo database selected for import.%s%n",
+                        color("red"), color("reset"));
+                return inventory;
+            }
+        }
+
+        try {
+            FileReader fileReader = new FileReader(file);
+            String databasePath = file.getCanonicalPath();
+            System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
+            if (initialImport) {
+                String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();  //todo check this on Linux
+                DateTools now = new DateTools();
+                String backupFilename = String.format("%s%s%s%s",
+                        filePath.substring(0, file.getCanonicalPath().length()),
+                        "_", now.getTime(), ".bak");
+                System.out.printf("%sBacking up database, please wait...%s%n",
+                        color("reset"), color("reset"));
+                File backup = new File(String.valueOf(backupFilename));
+                Files.copy(file.toPath(), backup.toPath());
+                System.out.printf("%s%s%s%n", color("green"), backupFilename, color("reset"));
+            }
+            final CSVFormat csvFormat = CSVFormat.Builder.create()
+                    .setHeader("vin", "make", "model", "color", "year", "mileage")
+                    .setAllowMissingColumnNames(true)
+                    .setSkipHeaderRecord(true)
+                    .build();
+            final Iterable<CSVRecord> automobiles = csvFormat.parse(fileReader);
+            automobiles.forEach(automobileRecord -> {
+                boolean duplicateFlag;
+                Automobile automobile = new Automobile();
+                automobile.setVin(automobileRecord.get("vin"));
+                duplicateFlag = duplicateVin(automobile.getVin(), inventory);
+                automobile.setMake(automobileRecord.get("make"));
+                automobile.setModel(automobileRecord.get("model"));
+                automobile.setColor(automobileRecord.get("color"));
+                automobile.setYear(Year.of(Integer.parseInt(automobileRecord.get("year"))));
+                automobile.setMileage(Integer.parseInt(automobileRecord.get("mileage")));
+                if (!duplicateFlag) {
+                    inventory.add(automobile);
+                    System.out.printf("%sSuccessfully added %s.%s%n",
+                            color("cyan"), automobile, color("reset"));
+                }
+            });
+        } catch (IOException e) {
+            System.out.printf("%sMissing or corrupted database.%s%n",
+                    color("red"), color("reset"));
+            System.out.println("Current automobile inventory contains: ");
+            listInventory(input, inventory);
+            System.out.printf("%n%sERROR - IMPORT ABORTED.%s%n%n",
+                    color("red"), color("reset"));
+        }
+        return inventory;
+    }
+
+    /**
      * Imports a list of valid automobile makes from a file.
      * Allows the user to select the list makes from a file chooser dialogue.
      * Validates the list using a simple keyword at the beginning of the file.
@@ -156,19 +237,44 @@ public class AutomobileInventory {
     }
 
     /**
+     * Lists the automobiles in the inventory.
+     * If the inventory is empty, it will print an error message to the console.
+     * Creates a String[] of automobiles.
+     *
+     * @param input     Scanner used to prompt the user for input.
+     * @param inventory The current inventory.
+     * @return a String array of the automobiles.
+     */
+    public String[] listInventory(Scanner input, ArrayList<Automobile> inventory) {
+        String[] inventoryAsStrings = new String[inventory.size()];
+        if (inventory.size() == 0) {
+            System.out.printf("%sThere are no automobiles in the inventory.%s%n",
+                    color("red"), color("reset"));
+        }
+        int count = 0;
+        for (Automobile automobile : inventory) {
+            System.out.println(automobile.toString());
+            inventoryAsStrings[count++] = automobile.toString();
+        }
+        System.out.print("\nType any key to continue: ");
+        input.nextLine();
+        return inventoryAsStrings;
+    }
+
+    /**
      * Adds an automobile to an AutomobileInventory.
      * Prints a record of the automobile to the console.
      * Returns the updated AutomobileInventory.
      *
-     * @param automobileInventory the AutomobileInventory to update.
-     * @param automobile the automobile to create and add.
+     * @param inventory the AutomobileInventory to update.
+     * @param automobile the automobile to add.
      * @return AutomobileInventory the updated AutomobileInventory.
      */
-    public AutomobileInventory addAutomobile(AutomobileInventory automobileInventory, Automobile automobile) {
-        automobileInventory.inventory.add(automobile);
+    public AutomobileInventory addAutomobile(AutomobileInventory inventory, Automobile automobile) {
+        inventory.inventory.add(automobile);
         System.out.printf("%sSuccessfully added %s.%s%n",
                 color("cyan"), automobile, color("reset"));
-        return automobileInventory;
+        return inventory;
     }
 
     /**
@@ -542,113 +648,6 @@ public class AutomobileInventory {
         System.out.printf("%sSuccessfully updated %s.%s%n",
                 color("cyan"), automobile, color("reset"));
         return inventory;
-    }
-
-    /**
-     * Imports an automobile inventory from a CSV file.
-     * On program initiation, backs up the default file automobileInventory.adb, and imports the file into the program.
-     * If not during initialization, prompts the user to select a csv database file, limited to file extension adb.
-     *
-     * @param input         scanner for user input
-     * @param inventory     the automobile inventory
-     * @param initialImport true on program initialization, imports the default database if true.
-     * @return the imported automobile inventory
-     */
-    public ArrayList<Automobile> importInventory(Scanner input, ArrayList<Automobile> inventory, boolean initialImport) {
-        File file = new File("automobileInventory.adb");
-        if (!initialImport) {
-            String userDir = System.getProperty("user.dir");
-            JFileChooser fileChooser = new JFileChooser(userDir);
-            fileChooser.setAcceptAllFileFilterUsed(false);
-            FileFilter filter = new FileNameExtensionFilter("Automobile Database File", "adb");
-            fileChooser.setFileFilter(filter);
-            fileChooser.setDialogTitle("Select a database:");
-            fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-            System.out.print("Select a database file to import: ");
-            int option = fileChooser.showOpenDialog(null);
-            if (option == JFileChooser.APPROVE_OPTION) {
-                file = fileChooser.getSelectedFile();
-                System.out.printf("%s%s%s%n", color("blue"), file.getName(), color("reset"));
-            } else {
-                System.out.printf("%sNo database selected for import.%s%n",
-                        color("red"), color("reset"));
-                return inventory;
-            }
-        }
-
-        try {
-            FileReader fileReader = new FileReader(file);
-            String databasePath = file.getCanonicalPath();
-            System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
-            if (initialImport) {
-                String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();  //todo check this on Linux
-                DateTools now = new DateTools();
-                String backupFilename = String.format("%s%s%s%s",
-                        filePath.substring(0, file.getCanonicalPath().length()),
-                        "_", now.getTime(), ".bak");
-                System.out.printf("%sBacking up database, please wait...%s%n",
-                        color("reset"), color("reset"));
-                File backup = new File(String.valueOf(backupFilename));
-                Files.copy(file.toPath(), backup.toPath());
-                System.out.printf("%s%s%s%n", color("green"), backupFilename, color("reset"));
-            }
-            final CSVFormat csvFormat = CSVFormat.Builder.create()
-                    .setHeader("vin", "make", "model", "color", "year", "mileage")
-                    .setAllowMissingColumnNames(true)
-                    .setSkipHeaderRecord(true)
-                    .build();
-            final Iterable<CSVRecord> automobiles = csvFormat.parse(fileReader);
-            automobiles.forEach(automobileRecord -> {
-                boolean duplicateFlag;
-                Automobile automobile = new Automobile();
-                automobile.setVin(automobileRecord.get("vin"));
-                duplicateFlag = duplicateVin(automobile.getVin(), inventory);
-                automobile.setMake(automobileRecord.get("make"));
-                automobile.setModel(automobileRecord.get("model"));
-                automobile.setColor(automobileRecord.get("color"));
-                automobile.setYear(Year.of(Integer.parseInt(automobileRecord.get("year"))));
-                automobile.setMileage(Integer.parseInt(automobileRecord.get("mileage")));
-                if (!duplicateFlag) {
-                    inventory.add(automobile);
-                    System.out.printf("%sSuccessfully added %s.%s%n",
-                            color("cyan"), automobile, color("reset"));
-                }
-            });
-        } catch (IOException e) {
-            System.out.printf("%sMissing or corrupted database.%s%n",
-                    color("red"), color("reset"));
-            System.out.println("Current automobile inventory contains: ");
-            listInventory(input, inventory);
-            System.out.printf("%n%sERROR - IMPORT ABORTED.%s%n%n",
-                    color("red"), color("reset"));
-        }
-        return inventory;
-    }
-
-
-    /**
-     * Lists the automobiles in the inventory.
-     * If the inventory is empty, it will print an error message to the console.
-     * Creates a String[] of automobiles.
-     *
-     * @param input     Scanner used to prompt the user for input.
-     * @param inventory The current inventory.
-     * @return a String array of the automobiles.
-     */
-    public String[] listInventory(Scanner input, ArrayList<Automobile> inventory) {
-        String[] inventoryAsStrings = new String[inventory.size()];
-        if (inventory.size() == 0) {
-            System.out.printf("%sThere are no automobiles in the inventory.%s%n",
-                    color("red"), color("reset"));
-        }
-        int count = 0;
-        for (Automobile automobile : inventory) {
-            System.out.println(automobile.toString());
-            inventoryAsStrings[count++] = automobile.toString();
-        }
-        System.out.print("\nType any key to continue: ");
-        input.nextLine();
-        return inventoryAsStrings;
     }
 
     /**
