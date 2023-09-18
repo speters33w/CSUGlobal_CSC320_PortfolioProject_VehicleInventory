@@ -5327,7 +5327,7 @@ public class StringUtils {
         if (str == null) {
             return null;
         }
-        return str.toLowerCase(LocaleUtils.toLocale(locale));
+        return str.toLowerCase(LocaleUtils.toLocale(String.valueOf(locale)));
     }
 
     private static int[] matches(final CharSequence first, final CharSequence second) {
@@ -9359,7 +9359,7 @@ public class StringUtils {
         if (str == null) {
             return null;
         }
-        return str.toUpperCase(LocaleUtils.toLocale(locale));
+        return str.toUpperCase(LocaleUtils.toLocale(String.valueOf(locale)));
     }
 
     /**

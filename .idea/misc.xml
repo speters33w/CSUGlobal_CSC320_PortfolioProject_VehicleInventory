@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CheckstyleConfigurable">
-    <option name="suppFilterFilename" value="" />
+    <option name="suppFilterFilename" value="C:\OneDrive\Java\lib\checkstyle-suppressions.xml" />
     <option name="suppCommentFilter" value="false" />
     <option name="offComment" value="CHECKSTYLE\:OFF" />
     <option name="onComment" value="CHECKSTYLE\:ON" />
@@ -16,7 +16,7 @@
     <option name="snInfluenceFormat" value="0" />
     <option name="snCheckCPP" value="true" />
     <option name="snCheckC" value="true" />
-    <option name="pathToUserRulesConfiguration" value="" />
+    <option name="pathToUserRulesConfiguration" value="C:\OneDrive\Java\lib\checkstyle.xml" />
     <option name="pathToJarWithRules" value="" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -34,6 +34,9 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="QAPlugAnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.7429578" />
   </component>
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
