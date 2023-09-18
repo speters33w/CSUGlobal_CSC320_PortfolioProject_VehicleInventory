@@ -29,30 +29,99 @@ import static util.speters33w.ANSIColor.color;
 import static util.speters33w.SearchTools.possibleMatches;
 
 public class AutomobileInventory {
-    private ArrayList<Automobile> inventory = new ArrayList<>();
+    /**
+     * An ArrayList&lt;Automobile&gt; of all automobiles in the object's inventory.
+     */
+    private ArrayList<Automobile> inventory;
+    /**
+     * A String containing the file-name of a list of valid automobile makes
+     */
     private String makesList;
-    private boolean overrideMake = true;
+    /**
+     * A boolean value that allows the user to override the valid automobile makes list and enter a custom make.
+     */
+    private boolean overrideMake = false;
 
     /**
-     * Allows subclassing of the automobile inventory program.
-     * Returns a list of all automobiles in the object inventory.
-     * @return A list of all automobiles in the object inventory.
+     * Default constructor for the AutomobileInventory class. <br />
+     * Imports the default inventory file (AutomobileInventory.adb) into the object's inventory. <br />
+     * Imports the default valid makes list for US makes. <br /></br />
+     * Example:
+     * <pre>
+     *     AutomobileInventory automobileInventory = new AutomobileInventory();
+     * </pre>
      */
-    public ArrayList<Automobile> getInventory() {
-        return inventory;
+    public AutomobileInventory() {
+        this.inventory = importInventory(new ArrayList<>(), true);
     }
 
     /**
-     * Main menu for the Automobile Inventory program.
-     * Allows the user to add, remove, update, import, list, and save automobiles, or quit.
-     * Prints a list of menu options to the console.
-     * Takes the first character from the user's input and processes it through a switch statement.
-     * Recursively reloads the menu after performing operations.
+     * Constructor for the AutomobileInventory class. <br /><br />
+     * Example:
+     * <pre>
+     *     ArrayList&lt;Automobile&gt; inventoryList = new
+     *     ArrayList&lt;&gt;(Arrays.asList(new Automobile("W2Y4ECHO5LT039795", "Freightliner",
+     *     "Sprinter 2500", "White", java.time.Year.of(2020), 64672)));
+     *     AutomobileInventory automobileInventory = new AutomobileInventory(inventoryList);
+     * </pre>
      *
-     * @param input     Scanner for user input.
-     * @param currentInventory ArrayList of automobiles in current currentInventory.
+     * @param inventoryList An ArrayList&lt;Automobile&gt; of the automobiles to be included in the inventory.
      */
-    public void menu(Scanner input, ArrayList<Automobile> currentInventory) {
+    public AutomobileInventory(ArrayList<Automobile> inventoryList) {
+        this.inventory = inventoryList;  // todo fails spotbugs vulnerability
+    }
+
+    /**
+     * This is an internal method. <br />
+     * Returns a list of all automobiles in the inventory. <br />
+     * Example:
+     * <pre>
+     *     ArrayList&lt;Automobile&gt; inventoryList = new ArrayList&lt;&gt;();
+     *     AutomobileInventory automobileInventory = new AutomobileInventory(inventoryList);
+     *     inventoryList = automobileInventory.getInventory();
+     * </pre>
+     *
+     * @return A list of all automobiles in the object inventory.
+     */
+    public ArrayList<Automobile> getInventory() {
+        return inventory;   // todo fails spotbugs vulnerability
+    }
+
+    /**
+     * Sets the list of all automobiles in the inventory. <br /><br />
+     * Example:
+     * <pre>
+     *     ArrayList&lt;Automobile&gt; inventoryList = new ArrayList&lt;&gt;();
+     *     AutomobileInventory automobileInventory = new AutomobileInventory();
+     *     inventoryList = automobileInventory.importInventory(inventoryList, true);
+     *     automobileInventory.setInventory(inventoryList);
+     * </pre>
+     *
+     * @param updatedInventory An ArrayList&lt;Automobile&gt; of the automobiles to be included in the inventory.
+     */
+    public void setInventory(ArrayList<Automobile> updatedInventory) {
+        this.inventory = updatedInventory;  // todo fails spotbugs vulnerability
+    }
+
+    /**
+     * Main menu for the Automobile Inventory program. <br />
+     * Allows the user to add, remove, update, import, list, or save automobiles; or quit. <br />
+     * Prints a list of menu options to the console. <br />
+     * Takes the first character from the user's input and processes it through a switch statement. <br />
+     * Recursively reloads the menu after performing operations except quit. <br /><br />
+     * Example:
+     * <pre>
+     *     Scanner input = new Scanner(System.in);
+     *     ArrayList&lt;Automobile&gt; inventoryList = new
+     *     ArrayList&lt;&gt;(Arrays.asList(new Automobile("W2Y4ECHO5LT039795", "Freightliner",
+     *     "Sprinter 2500", "White", java.time.Year.of(2020), 64672)));
+     *     AutomobileInventory automobileInventory = new AutomobileInventory(inventoryList);
+     *     automobileInventory.menu(input, automobileInventory);
+     * </pre>
+     *
+     * @param input Scanner for user input.
+     */
+    public void menu(Scanner input, AutomobileInventory automobileInventory) {
         System.out.printf("%n%sWelcome to the Automobile Inventory%s%n", color("cyanbd"), color("reset"));
         System.out.printf("%sPlease select an option:%s%n", color("reset"), color("reset"));
         System.out.printf("%s[A]dd a new automobile%s%n", color("green"), color("reset"));
@@ -67,53 +136,64 @@ public class AutomobileInventory {
         if (!option.isEmpty()) {
             option = option.substring(0, 1).toUpperCase();
         } else {
-            menu(input, currentInventory);
+            menu(input, automobileInventory);
         }
         switch (option) {
             case "A":
-                this.inventory = addAutomobile(input, currentInventory);
-                menu(input, currentInventory);
+                automobileInventory.inventory = addAutomobile(input, automobileInventory.inventory);
+                menu(input, automobileInventory);
                 break;
             case "R":
-                this.inventory = removeAutomobile(input, currentInventory);
-                menu(input, currentInventory);
+                automobileInventory.inventory = removeAutomobile(input, automobileInventory.inventory);
+                menu(input, automobileInventory);
                 break;
             case "U":
-                this.inventory = updateAutomobile(input, currentInventory);
-                menu(input, currentInventory);
+                updateAutomobile(input, automobileInventory);
+                menu(input, automobileInventory);
                 break;
             case "I":
-                this.inventory = importInventory(currentInventory, false);
-                menu(input, currentInventory);
+                automobileInventory.setInventory(importInventory(automobileInventory.inventory, false));
+                menu(input, automobileInventory);
                 break;
             case "L":
-                listInventory(currentInventory);
-                menu(input, currentInventory);
+                listInventory(automobileInventory);
+                menu(input, automobileInventory);
                 break;
             case "S":
-                saveInventory(currentInventory);
-                menu(input, currentInventory);
+                saveInventory(automobileInventory.inventory);
+                menu(input, automobileInventory);
                 break;
             case "Q":
-                quit(input, currentInventory);
+                quit(input, automobileInventory.inventory);
                 break;
             default:
                 System.out.printf("%sInvalid option, please try again.%s%n", color("red"), color("reset"));
                 System.out.print("\nType any key to continue: ");
                 input.nextLine();
-                menu(input, currentInventory);
+                menu(input, automobileInventory);
                 break;
         }
 
     }
 
     /**
-     * Imports an automobile currentInventory from a CSV file.
-     * On program initiation, backs up the default file automobileInventory.adb, and imports the file into the program.
-     * If not during initialization, prompts the user to select a csv database file, limited to file extension adb.
+     * Imports an automobile inventory from a CSV file with the extension .adb
+     * and appends it to the current inventory file. <br />
+     * Uses <span style="font-family: monospace;">System.getProperty(&quot;user.dir&quot;)</span>
+     * as the root of the relative path. <br />
+     * If initialImport is set to true, backs up the current default file with the current date and time
+     * appended to the filename to user.dir/bak/, then imports AutomobileInventory.adb,
+     * and appends it to the inventory. <br />
+     * If initialImport is set to false, prompts the user to select a database file,
+     * imports the file and appends it to the inventory. <br /><br />
+     * Example:
+     * <pre>
+     *     AutomobileInventory automobileInventory = new AutomobileInventory();
+     *     automobileInventory.setInventory(automobileInventory.inventory, false);
+     * </pre>
      *
-     * @param currentInventory     the automobile currentInventory
-     * @param initialImport true on program initialization, imports the default database if true.
+     * @param currentInventory The inventory
+     * @param initialImport    Imports the default database if true.
      * @return the imported automobile currentInventory
      */
     public ArrayList<Automobile> importInventory(ArrayList<Automobile> currentInventory, boolean initialImport) {
@@ -149,7 +229,7 @@ public class AutomobileInventory {
                 String backupFilename = String.format("%s%s%s%s",
                         filePath.substring(0, file.getCanonicalPath().length()),
                         "_", now.getTime(), ".bak");
-                System.out.printf("%sBacking up database, please wait...%s%n",
+                System.out.printf("%sBacking up the database, please wait...%s%n",
                         color("reset"), color("reset"));
                 File backup = new File(String.valueOf(backupFilename));
                 Files.copy(file.toPath(), backup.toPath());
@@ -181,12 +261,14 @@ public class AutomobileInventory {
             System.out.printf("%sMissing or corrupted database.%s%n",
                     color("red"), color("reset"));
             System.out.println("Current automobile currentInventory contains: ");
-            listInventory(currentInventory);
+            for (Automobile automobile : currentInventory) {
+                System.out.printf("%s%s%s%n", color("cyan"), automobile, color("reset"));
+            }
             System.out.printf("%n%sERROR - IMPORT ABORTED.%s%n%n",
                     color("red"), color("reset"));
         } finally {
-            if (fileReader!= null) {
-                try{
+            if (fileReader != null) {
+                try {
                     fileReader.close();
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
@@ -197,15 +279,18 @@ public class AutomobileInventory {
     }
 
     /**
-     * Imports a list of valid automobile makes from a file.
-     * Allows the user to select the list makes from a file chooser dialogue.
-     * Validates the list using a simple keyword at the beginning of the file.
-     * Returns null if there is no valid makes list chosen.
+     * Imports a list of valid automobile makes from a file. <br />
+     * Allows the user to select a list of valid automobile makes from a file chooser dialogue. <br />
+     * Validates the list using a simple keyword at the beginning of the file. <br />
+     * Returns null if there is no valid makes list chosen. <br /><br />
      *
-     * @return the list of valid automobile makes.
+     * @return A List&lt;String&gt; of a list of valid automobile makes.
      */
     List<String> importMakesList() {
         // Allows the user to select a list of valid automobile makes from a file chooser.
+        if (!overrideMake) {
+            this.makesList = "auto_brands_us.list";
+        }
         File file = new File("auto_brands_us.list");
         if (makesList == null) {
             String userDir = System.getProperty("user.dir");
@@ -246,13 +331,13 @@ public class AutomobileInventory {
             this.overrideMake = true;
         } finally {
 
-                if (importedMakesList!= null) {
-                    try {
-                        importedMakesList.close();
-                    } catch (IOException ioe) {
-                        ioe.printStackTrace();
-                    }
+            if (importedMakesList != null) {
+                try {
+                    importedMakesList.close();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
                 }
+            }
         }
         return autoMakesList;
     }
@@ -262,21 +347,18 @@ public class AutomobileInventory {
      * If the inventory is empty, it will print an error message to the console.
      * Creates a String[] of automobiles.
      *
-     * @param currentInventory The current inventory.
-     * @return a String array of the automobiles.
+     * @param automobileInventory The automobile inventory to list.
+     * @return A String array of the automobiles.
      */
-    public String[] listInventory(ArrayList<Automobile> currentInventory) {
-        String[] inventoryAsStrings = new String[currentInventory.size()];
+    public void listInventory(AutomobileInventory automobileInventory) {
+        ArrayList<Automobile> currentInventory = automobileInventory.inventory;
         if (currentInventory.size() == 0) {
             System.out.printf("%sThere are no automobiles in the inventory.%s%n",
                     color("red"), color("reset"));
         }
-        int count = 0;
         for (Automobile automobile : currentInventory) {
             System.out.println(automobile.toString());
-            inventoryAsStrings[count++] = automobile.toString();
         }
-        return inventoryAsStrings;
     }
 
     /**
@@ -285,13 +367,12 @@ public class AutomobileInventory {
      * Returns the updated AutomobileInventory.
      *
      * @param currentInventory the AutomobileInventory to update.
-     * @param automobile the automobile to add.
+     * @param automobile       the automobile to add.
      */
     public void addAutomobile(AutomobileInventory currentInventory, Automobile automobile) {
         currentInventory.inventory.add(automobile);
         System.out.printf("%sSuccessfully added %s.%s%n",
                 color("cyan"), automobile, color("reset"));
-//        return currentInventory;
     }
 
     /**
@@ -301,7 +382,7 @@ public class AutomobileInventory {
      * Provides some input verification of the make, color, and year through the called methods.
      * Prints a record of the automobile to the console.
      *
-     * @param input The user's input.
+     * @param input            The user's input.
      * @param currentInventory The current inventory.
      * @return The automobile that was added.
      */
@@ -342,12 +423,13 @@ public class AutomobileInventory {
     /**
      * Used to prompt the user for a VIN.
      * The prompt will append the modifier to the end of the prompt.
-     * @param input Scanner for user input.
+     *
+     * @param input    Scanner for user input.
      * @param modifier The modifier to append to the end of the prompt.
      * @return The VIN entered by the user in upper case.
      */
     String enterVin(Scanner input, String modifier) {
-        System.out.printf("%s%s%s", "Enter the VIN of the automobile ", modifier, ":");
+        System.out.printf("%s%s%s", "Enter the VIN of the automobile ", modifier, ": ");
         return input.nextLine().toUpperCase();
     }
 
@@ -355,7 +437,7 @@ public class AutomobileInventory {
      * Used to check for duplicate VINs in the currentInventory.
      * importInventory will ignore duplicate VIN records.
      *
-     * @param vin       The VIN from an imported file to check
+     * @param vin              The VIN from an imported file to check
      * @param currentInventory The current currentInventory
      * @return true if the VIN is already in the currentInventory, false otherwise
      */
@@ -559,7 +641,7 @@ public class AutomobileInventory {
      * then uses removeAutomobile(ArrayList&lt;Automobile&gt; inventory, String vin)
      * to remove the automobile from the inventory.
      *
-     * @param input     scanner for user input
+     * @param input            scanner for user input
      * @param currentInventory the automobile inventory
      * @return the updated automobile inventory
      */
@@ -575,7 +657,7 @@ public class AutomobileInventory {
      * If the inventory does not contain the VIN, it prints an error message to the console.
      *
      * @param currentInventory the automobile inventory
-     * @param vin       the VIN of the automobile to be removed
+     * @param vin              the VIN of the automobile to be removed
      * @return the updated automobile inventory
      */
     public ArrayList<Automobile> removeAutomobile(ArrayList<Automobile> currentInventory, String vin) {
@@ -604,23 +686,23 @@ public class AutomobileInventory {
      * If the automobile is found, it displays a menu with options to update the automobile.
      * Then it returns the updated automobile inventory.
      *
-     * @param input     Scanner for user input.
-     * @param currentInventory the automobile inventory.
-     * @return the updated automobile inventory
+     * @param input Scanner for user input.
      */
-    public ArrayList<Automobile> updateAutomobile(Scanner input, ArrayList<Automobile> currentInventory) {
-        Automobile automobile = new Automobile(); //todo does not update imported or added vehicles
+    public void updateAutomobile(Scanner input, AutomobileInventory automobileInventory) {
+        Automobile automobile = new Automobile(); // todo exceeds max cyclomatic complexity by 1.
         String vin = enterVin(input, "to be updated");
-        for (Automobile element : currentInventory) {
+        for (Automobile element : automobileInventory.getInventory()) {
             if (element.getVin().equalsIgnoreCase(vin)) {
                 System.out.printf("%sAutomobile found: %s.%s%n",
                         color("cyan"), element, color("reset"));
                 automobile = element;
                 break;
             }
+        }
+        if (automobile.getVin() == null){
             System.out.printf("%sCould not find automobile with VIN %s.%s%n",
                     color("red"), vin, color("reset"));
-            menu(input, currentInventory);
+            menu(input, automobileInventory);
         }
 
         System.out.printf("%sPlease select an option:%s%n", color("reset"), color("reset"));
@@ -635,7 +717,7 @@ public class AutomobileInventory {
         if (!option.isEmpty()) {
             option = option.substring(0, 1).toUpperCase();
         } else {
-            updateAutomobile(input, currentInventory);
+            updateAutomobile(input, automobileInventory);
         }
         switch (option) {
             case "B":
@@ -654,18 +736,17 @@ public class AutomobileInventory {
                 automobile = addMileage(input, automobile);
                 break;
             case "X":
-                menu(input, currentInventory);
+                menu(input, automobileInventory);
                 break;
             default:
                 System.out.printf("%sInvalid option, please try again.%s%n", color("red"), color("reset"));
                 System.out.print("\nType any key to continue: ");
                 input.nextLine();
-                updateAutomobile(input, currentInventory);
+                updateAutomobile(input, automobileInventory); // todo prints successfully added twice on invalid input
                 break;
         }
         System.out.printf("%sSuccessfully updated %s.%s%n",
                 color("cyan"), automobile, color("reset"));
-        return currentInventory;
     }
 
     /**
@@ -703,10 +784,12 @@ public class AutomobileInventory {
                     color("red"), ioe.getMessage(), color("reset"));
             System.out.printf("%s%s%s%n",
                     color("red"), "Current automobile currentInventory contains: ", color("reset"));
-            listInventory(currentInventory);
+            for (Automobile automobile : currentInventory) {
+                System.out.printf("%s%s%s%n", color("cyan"), automobile, color("reset"));
+            }
         } finally {
-            if (writer!= null) {
-                try{
+            if (writer != null) {
+                try {
                     writer.close();
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
@@ -722,7 +805,7 @@ public class AutomobileInventory {
      * There is no &quot;do you really want to quit?&quot; message,
      * user can re-run the program after quitting in error.
      *
-     * @param input     Scanner used to prompt the user for input.
+     * @param input            Scanner used to prompt the user for input.
      * @param currentInventory the modified Automobile inventory.
      */
     public void quit(Scanner input, ArrayList<Automobile> currentInventory) {
@@ -744,6 +827,8 @@ public class AutomobileInventory {
             System.out.printf("%sInvalid input. Please try again.%s%n",
                     color("red"), color("reset"));
         }
+        input.close();
+        System.exit(0); // todo fails spotbugs bad practice
     }
 
     /**
@@ -757,14 +842,14 @@ public class AutomobileInventory {
      */
     public static void automobileInventory() {
         Scanner input = new Scanner(System.in, StandardCharsets.UTF_8);
-        AutomobileInventory automobileInventory = new AutomobileInventory();
-        automobileInventory.inventory = new ArrayList<>();
+        ArrayList<Automobile> inventoryList = new ArrayList<>();
+        AutomobileInventory automobileInventory = new AutomobileInventory(inventoryList);
         System.out.printf("%sInitializing database, please wait...%s%n",
                 color("reset"), color("reset"));
         automobileInventory.inventory = automobileInventory.importInventory
                 (automobileInventory.inventory, true);
         System.out.print("\nDatabase Initialized.\n");
-        automobileInventory.menu(input, automobileInventory.inventory);
+        automobileInventory.menu(input, automobileInventory);
         input.close();
     }
 

@@ -38,18 +38,16 @@ public class TestAutomobile {
 
         System.out.println("\nThen call the method to list the values.");
         System.out.println(automobile);
-        String[] inventoryAsStrings = automobileInventory.listInventory(automobileInventory.getInventory());
+        automobileInventory.listInventory(automobileInventory);
 
         System.out.println("\nLoop through the array and print to the screen.");
-        for (String value : inventoryAsStrings) {
-            System.out.println(value);
-        }
+        automobileInventory.listInventory(automobileInventory);
 
         System.out.println("\nCall the remove vehicle method to clear the variables.");
         automobileInventory.removeAutomobile(automobileInventory.getInventory(), "1C6RD7LT6CS320434");
 
         System.out.println("\nPrint the return value.");
-        automobileInventory.listInventory(automobileInventory.getInventory());
+        automobileInventory.listInventory(automobileInventory);
 
         System.out.println("\nAdd a new vehicle.");
         automobile = new Automobile("1GTR9CED7KZ251641", "GMC", "Sierra",
@@ -60,15 +58,15 @@ public class TestAutomobile {
         System.out.println(automobile);
 
         System.out.println("\nCall the list method and print the new vehicle information to the screen.");
-        automobileInventory.listInventory(automobileInventory.getInventory());
+        automobileInventory.listInventory(automobileInventory);
 
         System.out.println("\nUpdate the vehicle.");
-        System.out.printf("%nThe current vehicle VIN is %s%s%s%n",
+        System.out.printf("%nThe VIN of the first automobile in the inventory is %s%s%s%n",
                 color("green"), automobileInventory.getInventory().get(0).getVin(), color("reset"));
-        automobileInventory.updateAutomobile(input, automobileInventory.getInventory());
+        automobileInventory.updateAutomobile(input, automobileInventory);
 
         System.out.println("\nPrint the return value.");
-        automobileInventory.listInventory(automobileInventory.getInventory());
+        automobileInventory.listInventory(automobileInventory);
 
         System.out.println("\nDisplay a message asking if the user wants to print the information to a file (Y or N).");
         System.out.println("    a. Use a scanner to capture the response. " +
