@@ -14,6 +14,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.charset.StandardCharsets;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
@@ -136,7 +137,7 @@ public class AutomobileInventory {
         }
 
         try {
-            FileReader fileReader = new FileReader(file);
+            FileReader fileReader = new FileReader(file, StandardCharsets.UTF_8);
             String databasePath = file.getCanonicalPath();
             System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
             if (initialImport) {
@@ -173,6 +174,7 @@ public class AutomobileInventory {
                             color("cyan"), automobile, color("reset"));
                 }
             });
+            fileReader.close();
         } catch (IOException e) {
             System.out.printf("%sMissing or corrupted database.%s%n",
                     color("red"), color("reset"));
@@ -219,7 +221,7 @@ public class AutomobileInventory {
         // Reads the automobile makes list file into an ArrayList for input validation.
         List<String> autoMakesList = new ArrayList<>();
         try {
-            FileReader makesList = new FileReader(file);
+            FileReader makesList = new FileReader(file, StandardCharsets.UTF_8);
             Iterable<CSVRecord> make = CSVFormat.DEFAULT.parse(makesList);
             make.forEach(line -> autoMakesList.add(line.get(0)));
             if (!autoMakesList.contains("AutomobileInventoryMakeList")) {
@@ -227,6 +229,7 @@ public class AutomobileInventory {
                         color("red"), color("reset"));
                 this.overrideMake = true;
             }
+            makesList.close();
 
         } catch (IOException ioe) {
             System.out.printf("%sInvalid list of valid automobile makes.%s%n",
@@ -660,7 +663,7 @@ public class AutomobileInventory {
      */
     public void saveInventory(Scanner input, ArrayList<Automobile> inventory) {
         try {
-            FileWriter writer = new FileWriter("automobileInventory.adb");
+            FileWriter writer = new FileWriter("automobileInventory.adb", StandardCharsets.UTF_8);
             CSVPrinter csvPrinter = new CSVPrinter(writer,
                     CSVFormat.Builder.create()
                             .setDelimiter(",")
@@ -677,6 +680,7 @@ public class AutomobileInventory {
             System.out.printf("%s***** SAVE SUCCESSFUL! *****%s%n",
                     color("green"), color("reset"));
             csvPrinter.close(true);
+            writer.close();
         } catch (IOException ioe) {
             System.out.printf("%n%s***** SAVE UNSUCCESSFUL! *****%s%n%n",
                     color("red"), color("reset"));
@@ -732,7 +736,7 @@ public class AutomobileInventory {
      * Closes the Scanner and ends the program.
      */
     public static void automobileInventory() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in, StandardCharsets.UTF_8);
         AutomobileInventory automobileInventory = new AutomobileInventory();
         automobileInventory.inventory = new ArrayList<>();
         System.out.printf("%sInitializing database, please wait...%s%n",
