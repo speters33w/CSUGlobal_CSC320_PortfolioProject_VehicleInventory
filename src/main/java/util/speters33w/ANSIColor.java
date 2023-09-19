@@ -3,12 +3,19 @@ package util.speters33w;
 /**
  * Returns ANSI color codes for the given color.
  * Written for a CSUGlobal project, but portable across other projects.
+ *
  * @author Stephan Peters (speters33w)
  * bd = bold
  * hi = high intensity
  */
 public class ANSIColor {
-    /** Returns ANSI color codes for the given color. */
+    /**
+     * Returns ANSI color codes for the given color.
+     *
+     * @param color The color to return ANSI color codes for.
+     * @return The ANSI color codes for the named color.
+     */
+
     public static String color(String color) {
         color = color.toLowerCase();
         switch (color) {

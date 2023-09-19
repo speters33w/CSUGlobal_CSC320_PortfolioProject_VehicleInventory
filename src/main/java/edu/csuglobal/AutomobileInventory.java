@@ -47,7 +47,7 @@ public class AutomobileInventory {
     /**
      * Default constructor for the AutomobileInventory class. <br />
      * Imports the default inventory file (AutomobileInventory.adb) into the object's inventory. <br />
-     * Imports the default valid makes list for US makes. <br /></br />
+     * Imports the default valid makes list for US makes. <br /><br />
      * Example:
      * <pre>
      *     AutomobileInventory automobileInventory = new AutomobileInventory();
@@ -75,7 +75,6 @@ public class AutomobileInventory {
     }
 
     /**
-     * This is an internal method. <br />
      * Returns a list of all automobiles in the inventory. <br />
      * Example:
      * <pre>
@@ -124,6 +123,7 @@ public class AutomobileInventory {
      * </pre>
      *
      * @param input Scanner for user input.
+     * @param automobileInventory The AutomobileInventory object to be updated.
      */
     public void menu(Scanner input, AutomobileInventory automobileInventory) {
         System.out.printf("%n%sWelcome to the Automobile Inventory%s%n", color("cyanbd"), color("reset"));
@@ -778,6 +778,7 @@ public class AutomobileInventory {
      * </pre>
      *
      * @param input Scanner for user input.
+     * @param automobileInventory The ArrayList&lt;Automobile&gt; to update.
      */
     public void updateAutomobile(Scanner input, AutomobileInventory automobileInventory) {
         Automobile automobile = new Automobile(); // todo exceeds max cyclomatic complexity by 1.

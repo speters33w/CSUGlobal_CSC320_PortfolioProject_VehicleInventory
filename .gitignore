@@ -43,3 +43,5 @@ build/
 /bak/automobileInventory.original
 /src/main/java/example/
 
+/.idea/checkstyleidea-libs/
+/javadoc_errors.txt
