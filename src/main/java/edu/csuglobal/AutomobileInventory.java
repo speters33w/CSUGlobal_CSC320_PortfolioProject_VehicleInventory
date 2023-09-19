@@ -46,7 +46,7 @@ public class AutomobileInventory {
 
     /**
      * Default constructor for the AutomobileInventory class. <br />
-     * Imports the default inventory file (AutomobileInventory.adb) into the object's inventory. <br />
+     * Imports the default inventory file (automobileInventory.adb) into the object's inventory. <br />
      * Imports the default valid makes list for US makes. <br /><br />
      * Example:
      * <pre>
@@ -202,7 +202,7 @@ public class AutomobileInventory {
      */
     public ArrayList<Automobile> importInventory(ArrayList<Automobile> currentInventory, boolean initialImport) {
 
-        File file = new File(System.getProperty("user.dir") + "/AutomobileInventory.adb");
+        File file = new File(System.getProperty("user.dir") + "/automobileInventory.adb");
         FileReader fileReader = null;
 
         if (!initialImport) {
@@ -227,8 +227,6 @@ public class AutomobileInventory {
 
         try {
             fileReader = new FileReader(file, StandardCharsets.UTF_8);
-            String databasePath = file.getCanonicalPath();
-            System.out.printf("%s%s%s%n", color("green"), databasePath, color("reset"));
             if (initialImport) {
                 String filePath = System.getProperty("user.dir") + "/bak/" + file.getName();
                 DateTools now = new DateTools();
@@ -264,7 +262,7 @@ public class AutomobileInventory {
                 }
             });
         } catch (IOException e) {
-            System.out.printf("%sMissing or corrupted database.%s%n",
+            System.out.printf("%sMissing or corrupted database.%s%nUse option I to manually import the database%n",
                     color("red"), color("reset"));
             System.out.println("Current automobile currentInventory contains: ");
             for (Automobile automobile : currentInventory) {
@@ -280,9 +278,6 @@ public class AutomobileInventory {
                     ioe.printStackTrace();
                 }
             }
-        }
-        for (Automobile automobile : currentInventory) {
-            System.out.printf("%s%s%s%n", color("cyan"), automobile, color("reset"));
         }
         return currentInventory;
     }
