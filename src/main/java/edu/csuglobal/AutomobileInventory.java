@@ -46,7 +46,7 @@ public class AutomobileInventory {
 
     /**
      * Default constructor for the AutomobileInventory class. <br />
-     * Imports the default inventory file (automobileInventory.adb) into the object's inventory. <br />
+     * Imports the default inventory file (AutomobileInventory.adb) into the object's inventory. <br />
      * Imports the default valid makes list for US makes. <br /><br />
      * Example:
      * <pre>
@@ -202,7 +202,7 @@ public class AutomobileInventory {
      */
     public ArrayList<Automobile> importInventory(ArrayList<Automobile> currentInventory, boolean initialImport) {
 
-        File file = new File(System.getProperty("user.dir") + "/automobileInventory.adb");
+        File file = new File(System.getProperty("user.dir") + "/AutomobileInventory.adb");
         FileReader fileReader = null;
 
         if (!initialImport) {
@@ -852,7 +852,7 @@ public class AutomobileInventory {
     public void saveInventory(ArrayList<Automobile> currentInventory) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter("automobileInventory.adb", StandardCharsets.UTF_8);
+            writer = new FileWriter("AutomobileInventory.adb", StandardCharsets.UTF_8);
             CSVPrinter csvPrinter = new CSVPrinter(writer,
                     CSVFormat.Builder.create()
                             .setDelimiter(",")
