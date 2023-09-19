@@ -28,6 +28,12 @@ import static org.apache.commons.text.WordUtils.capitalizeFully;
 import static util.speters33w.ANSIColor.color;
 import static util.speters33w.SearchTools.possibleMatches;
 
+/**
+ * Final Project for Colorado State University CSC320
+ * The AutomobileInventory class is a Java class that provides methods for managing an inventory of automobiles.
+ * The class includes methods for adding, removing, updating, importing, listing, and saving automobiles.
+ * The class also includes a main menu that allows the user to perform these operations.
+ */
 public class AutomobileInventory {
     /**
      * An ArrayList&lt;Automobile&gt; of all automobiles in the object's inventory.
@@ -294,7 +300,7 @@ public class AutomobileInventory {
      * @param overrideMake Allows the user to select a list of valid automobile makes.
      * @return A List&lt;String&gt; of a list of valid automobile makes.
      */
-    List<String> importMakesList(boolean overrideMake) {
+    public List<String> importMakesList(boolean overrideMake) {
 
         // Allows the user to select a list of valid automobile makes from a file chooser.
         File file = new File(makesList);
@@ -405,6 +411,7 @@ public class AutomobileInventory {
      *     AutomobileInventory automobileInventory = new AutomobileInventory();
      *     automobileInventory.addAutomobile(input, automobileInventory);
      * </pre>
+     *
      * @param input            Scanner for user input.
      * @param currentInventory The AutomobileInventory to update.
      * @return The inventory with the new automobile added.
@@ -449,6 +456,7 @@ public class AutomobileInventory {
      * <pre>
      *     String vin = AutomobileInventory.enterVin(input, "");
      * </pre>
+     *
      * @param input    Scanner for user input.
      * @param modifier The modifier to append to the end of the prompt.
      * @return The VIN entered by the user in upper case.
@@ -468,7 +476,7 @@ public class AutomobileInventory {
      *     if (automobileInventory.duplicateVin(vinToCheck, automobileInventory.getInventory)) {
      *         System.out.println("Duplicate VIN found. Automobile is in the inventory.");
      *     }
-     *</pre>
+     * </pre>
      *
      * @param vin              The VIN to check against the inventory.
      * @param currentInventory The inventory to check against.
@@ -582,6 +590,7 @@ public class AutomobileInventory {
      *     Automobile automobile = new Automobile("A7A687C104099", "AMC", "Pacer", "Woodside", Year.of(1977), 38248);
      *     automobile = addColor(input, automobile);
      * </pre>
+     *
      * @param input      Scanner for user input.
      * @param automobile The automobile object to be updated.
      * @return The automobile with the updated color.
@@ -622,6 +631,7 @@ public class AutomobileInventory {
      *    Automobile automobile = new Automobile("7183771100866", "Pontiac", "Acadian", "White", Year.of(1967), 123456);
      *    automobile = addYear(input, automobile);
      * </pre>
+     *
      * @param input      Scanner for user input.
      * @param automobile The automobile to be updated.
      * @return The updated automobile with the updated year.
@@ -670,6 +680,7 @@ public class AutomobileInventory {
      *         "Econoline", "White", Year.of(2005), 286539);
      *     automobile = addMileage(input, automobile);
      * </pre>
+     *
      * @param input      Scanner for user input.
      * @param automobile The automobile to be updated.
      * @return The automobile with the updated odometer reading.
@@ -699,7 +710,7 @@ public class AutomobileInventory {
      * Removes an automobile from the automobile inventory using the VIN. <br />
      * Requests a VIN from the user,
      * then uses <span style="font-family: monospace;">
-     *     removeAutomobile(ArrayList&lt;Automobile&gt; inventory, String vin)</span> <br />
+     * removeAutomobile(ArrayList&lt;Automobile&gt; inventory, String vin)</span> <br />
      * to remove the automobile from the inventory. <br /><br />
      * Example:
      * <pre>
@@ -728,7 +739,8 @@ public class AutomobileInventory {
      *     AutomobileInventory automobileInventory = new AutomobileInventory();
      *     String vinToRemove = "5Y2SL62803Z412974";
      *     automobileInventory.removeAutomobile(automobileInventory.getInventory(), vinToRemove);
-     *</pre>
+     * </pre>
+     *
      * @param currentInventory The ArrayList&lt;Automobile&gt; to remove the automobile from.
      * @param vin              The VIN of the automobile to be removed.
      * @return the updated ArrayList&lt;Automobile&gt; with the automobile removed.
@@ -764,6 +776,7 @@ public class AutomobileInventory {
      *     AutomobileInventory automobileInventory = new AutomobileInventory();
      *     automobileInventory.addAutomobile(input, automobileInventory.getInventory());
      * </pre>
+     *
      * @param input Scanner for user input.
      */
     public void updateAutomobile(Scanner input, AutomobileInventory automobileInventory) {
@@ -894,6 +907,7 @@ public class AutomobileInventory {
      *     AutomobileInventory automobileInventory = new AutomobileInventory();
      *     automobileInventory.quit(input, automobileInventory.getInventory());
      * </pre>
+     *
      * @param input            Scanner used to prompt the user for input.
      * @param currentInventory The modified inventory it will save if asked.
      */
@@ -949,6 +963,7 @@ public class AutomobileInventory {
      * <pre>
      *     edu.csuglobal.AutomobileInventory.main(new String[0]);
      * </pre>
+     *
      * @param args command line arguments (not used).
      */
     public static void main(String[] args) {

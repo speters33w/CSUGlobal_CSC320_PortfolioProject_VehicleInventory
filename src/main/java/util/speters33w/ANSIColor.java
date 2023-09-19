@@ -8,6 +8,7 @@ package util.speters33w;
  * hi = high intensity
  */
 public class ANSIColor {
+    /** Returns ANSI color codes for the given color. */
     public static String color(String color) {
         color = color.toLowerCase();
         switch (color) {

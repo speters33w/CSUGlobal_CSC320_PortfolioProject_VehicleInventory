@@ -12,7 +12,6 @@ package edu.csuglobal;
 import java.time.Year;
 
 
-
 /**
  * An automobile class used for dealer inventory.
  * It stores the following fields:
@@ -29,25 +28,45 @@ import java.time.Year;
 //@NoArgsConstructor
 //@ToString
 public class Automobile {
+    /**
+     * The VIN number of the automobile.
+     */
     private String vin;
+    /**
+     * The make of the automobile.
+     */
     private String make;
+    /**
+     * The model of the automobile.
+     */
     private String model;
+    /**
+     * The color of the automobile.
+     */
     private String color;
+    /**
+     * The year of the automobile.
+     */
     private Year year;
+    /**
+     * The odometer reading of the automobile.
+     */
     private int mileage;
 
     /**
      * Default constructor for the automobile class.
      */
-    public Automobile(){}
+    public Automobile() {
+    }
 
     /**
      * Constructor for the automobile class.
-     * @param vin the vin number of the automobile
-     * @param make the make of the automobile
-     * @param model the model of the automobile
-     * @param color the color of the automobile
-     * @param year the java.Time.Year of the automobile
+     *
+     * @param vin     the vin number of the automobile
+     * @param make    the make of the automobile
+     * @param model   the model of the automobile
+     * @param color   the color of the automobile
+     * @param year    the java.Time.Year of the automobile
      * @param mileage the odometer reading of the automobile
      */
     public Automobile(String vin, String make, String model, String color, Year year, int mileage) {
@@ -61,6 +80,7 @@ public class Automobile {
 
     /**
      * Sets the VIN of the automobile
+     *
      * @param vin the VIN of the automobile
      */
     public void setVin(String vin) {
@@ -69,6 +89,7 @@ public class Automobile {
 
     /**
      * Sets the make of the automobile
+     *
      * @param make the make of the automobile
      */
     public void setMake(String make) {
@@ -77,6 +98,7 @@ public class Automobile {
 
     /**
      * Sets the model of the automobile
+     *
      * @param model the model of the automobile
      */
     public void setModel(String model) {
@@ -85,6 +107,7 @@ public class Automobile {
 
     /**
      * Sets the color of the automobile
+     *
      * @param color the color of the automobile
      */
     public void setColor(String color) {
@@ -93,6 +116,7 @@ public class Automobile {
 
     /**
      * Sets the year of the automobile
+     *
      * @param year the java.Time.Year of the automobile
      */
     public void setYear(Year year) {
@@ -101,6 +125,7 @@ public class Automobile {
 
     /**
      * Sets the odometer reading of the automobile
+     *
      * @param mileage the odometer reading of the automobile
      */
     public void setMileage(int mileage) {
@@ -109,6 +134,7 @@ public class Automobile {
 
     /**
      * Returns the VIN of the automobile
+     *
      * @return the VIN of the automobile
      */
     public String getVin() {
@@ -117,6 +143,7 @@ public class Automobile {
 
     /**
      * Returns the make of the automobile
+     *
      * @return the make of the automobile
      */
     public String getMake() {
@@ -125,6 +152,7 @@ public class Automobile {
 
     /**
      * Returns the model of the automobile
+     *
      * @return the model of the automobile
      */
     public String getModel() {
@@ -133,6 +161,7 @@ public class Automobile {
 
     /**
      * Returns the color of the automobile
+     *
      * @return the color of the automobile
      */
     public String getColor() {
@@ -141,6 +170,7 @@ public class Automobile {
 
     /**
      * Returns the java.Time.Year of the automobile
+     *
      * @return the java.Time.Year of the automobile
      */
     public Year getYear() {
@@ -149,6 +179,7 @@ public class Automobile {
 
     /**
      * Returns the year of the automobile as a String
+     *
      * @return the year of the automobile as a String
      */
     public String getYearAsString() {
@@ -157,6 +188,7 @@ public class Automobile {
 
     /**
      * Returns the odometer reading of the automobile
+     *
      * @return the odometer reading of the automobile
      */
     public int getMileage() {
@@ -165,6 +197,7 @@ public class Automobile {
 
     /**
      * Returns the automobile as a String[] array
+     *
      * @return the automobile as a String[] array
      */
     public String[] getAutomobile() {
@@ -174,6 +207,7 @@ public class Automobile {
 
     /**
      * Returns the automobile as a String
+     *
      * @return the automobile as a String
      */
     @Override

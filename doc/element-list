@@ -1,6 +1,5 @@
 unnamed package
 edu.csuglobal
-example
 org.apache.commons.csv
 org.apache.commons.lang3
 org.apache.commons.lang3.function

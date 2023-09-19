@@ -8,16 +8,18 @@ import java.util.List;
 /**
  * A class that contains methods to perform fuzzy searches.
  * Written for a CSUGlobal project, but portable across other projects.
+ *
  * @author Stephan Peters (speters33w)
  */
 public class SearchTools {
     /**
      * Compares a search term with terms in a list and returns the closest match(es).
+     *
      * @param list A list of search terms to be compared.
      * @param term A search term to be compared with terms in the list.
-     * @return a list of search terms that are closest to the search term.
+     * @return A list of search terms that are closest to the search term.
      */
-    public static List<String> fuzzySearch(List<String> list, String term){
+    public static List<String> fuzzySearch(List<String> list, String term) {
         List<String> fuzzySearch = new ArrayList<>();
         LevenshteinDistance distance = new LevenshteinDistance();
         int minScore = 10;
@@ -37,12 +39,13 @@ public class SearchTools {
     /**
      * Compares a search term with terms in a list and returns the closest match(es)
      * in the first checkUpTo characters.
-     * @param list A list of search terms to be compared.
-     * @param term A search term to be compared with terms in the list.
+     *
+     * @param list      A list of search terms to be compared.
+     * @param term      A search term to be compared with terms in the list.
      * @param checkUpTo Checks match for the first checkUpTo characters only.
-     * @return a list of search terms that are closest to the search term.
+     * @return A list of search terms that are closest to the search term.
      */
-    public static List<String> fuzzySearch(List<String> list, String term, int checkUpTo){
+    public static List<String> fuzzySearch(List<String> list, String term, int checkUpTo) {
         List<String> fuzzySearch = new ArrayList<>();
         LevenshteinDistance distance = new LevenshteinDistance();
         int minScore = checkUpTo + 1;
@@ -53,7 +56,7 @@ public class SearchTools {
             } else {
                 score = distance.apply(item, term);
             }
-            if (score < minScore ) {
+            if (score < minScore) {
                 fuzzySearch.clear();
                 fuzzySearch.add(item);
                 minScore = score;
@@ -65,11 +68,12 @@ public class SearchTools {
     }
 
     /**
-     * Compares a search term with terms in a list and prompts the user with close match(es)
+     * Compares a search term with terms in a list and prompts the user with close match(es).
+     *
      * @param list A list of search terms to be compared.
      * @param term A search term to be compared with terms in the list.
      **/
-    public static void possibleMatches(List<String> list, String term){
+    public static void possibleMatches(List<String> list, String term) {
         List<String> possibleMatches = fuzzySearch(list, term, term.length());
         if (possibleMatches.size() >= 1) {
             System.out.print("Did you mean ");
