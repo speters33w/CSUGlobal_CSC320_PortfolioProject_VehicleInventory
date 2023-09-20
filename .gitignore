@@ -37,6 +37,9 @@ build/
 ### Mac OS ###
 .DS_Store
 
+### BlueJ ###
+*.bluej
+
 ### Additional Ignored Files ###
 /tmp/
 /bak/*.bak
@@ -45,3 +48,4 @@ build/
 
 /.idea/checkstyleidea-libs/
 /javadoc_errors.txt
+/jar/bak/*.bak
