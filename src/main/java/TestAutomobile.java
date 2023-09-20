@@ -1,5 +1,5 @@
-import edu.csuglobal.Automobile;
-import edu.csuglobal.AutomobileInventory;
+// import edu.csuglobal.Automobile;
+// import edu.csuglobal.AutomobileInventory;
 
 import java.time.Year;
 import java.util.Scanner;

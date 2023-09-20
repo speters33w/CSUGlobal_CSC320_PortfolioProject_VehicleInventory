@@ -40,6 +40,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.commons.lang3.mutable.MutableInt;
 import org.apache.commons.lang3.stream.Streams;
 
+// @SuppressWarnings("unchecked")
 /**
  * Operations on arrays, primitive arrays (like {@code int[]}) and
  * primitive wrapper arrays (like {@code Integer[]}).
@@ -766,6 +767,7 @@ public class ArrayUtils {
      * in the new method: inserting {@code X} into a {@code null} array results in {@code null} not {@code X}.
      */
     @Deprecated
+    @SuppressWarnings("unchecked")
     public static <T> T[] add(final T[] array, final int index, final T element) {
         final Class<T> clss;
         if (array != null) {
@@ -5587,6 +5589,7 @@ public class ArrayUtils {
      * @deprecated Use {@link #removeAllOccurrences(Object[], Object)}
      */
     @Deprecated
+    @SuppressWarnings("unchecked")
     public static <T> T[] removeAllOccurences(final T[] array, final T element) {
         return (T[]) removeAll((Object) array, indexesOf(array, element));
     }
@@ -5750,6 +5753,7 @@ public class ArrayUtils {
      * @return A new array containing the existing elements except the occurrences of the specified element.
      * @since 3.10
      */
+    @SuppressWarnings("unchecked")
     public static <T> T[] removeAllOccurrences(final T[] array, final T element) {
         return (T[]) removeAll((Object) array, indexesOf(array, element));
     }
