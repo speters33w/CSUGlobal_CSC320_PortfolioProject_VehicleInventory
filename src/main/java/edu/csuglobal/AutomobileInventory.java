@@ -46,7 +46,7 @@ public class AutomobileInventory {
 
     /**
      * Default constructor for the AutomobileInventory class. <br />
-     * Imports the default inventory file (AutomobileInventory.adb) into the object's inventory. <br />
+     * Imports the default inventory file (autos.adb) into the object's inventory. <br />
      * Imports the default valid makes list for US makes. <br /><br />
      * Example:
      * <pre>
@@ -186,7 +186,7 @@ public class AutomobileInventory {
      * Uses <span style="font-family: monospace;">System.getProperty(&quot;user.dir&quot;)</span>
      * as the root of the relative path. <br />
      * If initialImport is set to true, backs up the current default file with the current date and time
-     * appended to the filename to user.dir/bak/, then imports AutomobileInventory.adb,
+     * appended to the filename to user.dir/bak/, then imports autos.adb,
      * and appends it to the inventory. <br />
      * If initialImport is set to false, prompts the user to select a database file,
      * imports the file and appends it to the inventory. <br /><br />
@@ -202,7 +202,7 @@ public class AutomobileInventory {
      */
     public ArrayList<Automobile> importInventory(ArrayList<Automobile> currentInventory, boolean initialImport) {
 
-        File file = new File(System.getProperty("user.dir") + "/AutomobileInventory.adb");
+        File file = new File("autos.adb");
         FileReader fileReader = null;
 
         if (!initialImport) {
@@ -852,7 +852,7 @@ public class AutomobileInventory {
     public void saveInventory(ArrayList<Automobile> currentInventory) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter("AutomobileInventory.adb", StandardCharsets.UTF_8);
+            writer = new FileWriter("autos.adb", StandardCharsets.UTF_8);
             CSVPrinter csvPrinter = new CSVPrinter(writer,
                     CSVFormat.Builder.create()
                             .setDelimiter(",")

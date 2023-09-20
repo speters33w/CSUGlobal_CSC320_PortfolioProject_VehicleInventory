@@ -71,7 +71,7 @@ public class TestAutomobile {
         System.out.println("\nDisplay a message asking if the user wants to print the information to a file (Y or N).");
         System.out.println("    a. Use a scanner to capture the response. " +
                            "If \"Y\", print the file to a predefined location." +
-                           "\n       (e.g., /user.dir/automobileInventory.adb). " +
+                           "\n       (e.g., /user.dir/autos.adb). " +
                            "Note: you may want to create a method to print the information in the main class.");
         System.out.println("    b. If \"N\", indicate that a file will not be printed.\n");
         automobileInventory.quit(input, automobileInventory.getInventory());
