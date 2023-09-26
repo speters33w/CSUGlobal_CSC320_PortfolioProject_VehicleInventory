@@ -49,3 +49,5 @@ build/
 /.idea/checkstyleidea-libs/
 /javadoc_errors.txt
 /jar/bak/*.bak
+/.profileconfig.json
+*.jfr

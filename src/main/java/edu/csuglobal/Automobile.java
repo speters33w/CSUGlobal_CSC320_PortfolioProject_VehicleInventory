@@ -55,6 +55,7 @@ public class Automobile {
 
     /**
      * Default constructor for the automobile class.
+     * All parameters will be set to null.
      */
     public Automobile() {
     }
@@ -117,7 +118,7 @@ public class Automobile {
     /**
      * Sets the year of the automobile
      *
-     * @param year the java.Time.Year of the automobile
+     * @param year the java.time.Year of the automobile
      */
     public void setYear(Year year) {
         this.year = year;
@@ -169,9 +170,9 @@ public class Automobile {
     }
 
     /**
-     * Returns the java.Time.Year of the automobile
+     * Returns the java.time.Year of the automobile
      *
-     * @return the java.Time.Year of the automobile
+     * @return the java.time.Year of the automobile
      */
     public Year getYear() {
         return year;
