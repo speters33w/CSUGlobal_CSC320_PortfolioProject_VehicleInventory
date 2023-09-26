@@ -4,10 +4,28 @@
 
 ###  ***\*Portfolio Project (300 Points)\****
 
-NOTES: 
-This is a Maven project and must be imported as a Maven project in order to import dependencies.
+**NOTES:** 
+**This is a Maven project and must be imported as a Maven project** in order to import dependencies.
 The project may be run from /src/main/java/Main.java
 The tests described below may be run from /src/test/java/TestAutomobile.java
+
+**The project can also be run directly from the jar in the release**.
+
+[VehicleInventory-1.0.zip](https://github.com/speters33w/VehicleInventory/releases/download/v1.0.0/VehicleInventory-1.0.zip)
+
+The following files need to be present in the same directory as the jar to run this program:
+
+bak (directory)
+auto_brands_us.list
+autos.adb
+
+The program is best run on a terminal with ANSI support, use PowerShell 7 (Windows) or [almost] any Linux terminal.
+
+Run the program with the following command:
+`java -jar VehicleInventory-1.0.jar`
+
+Run the test pogram with the following command:
+`java -cp VehicleInventory-1.0.jar TestAutomobile`
 
 ### Option #1: 
 

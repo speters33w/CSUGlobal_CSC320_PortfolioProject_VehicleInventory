@@ -9,5 +9,5 @@ The program is best run on a terminal with ANSI support, use PowerShell 7 (Windo
 Run the program with the following command:
 java -jar VehicleInventory-1.0.jar
 
-Run the test pogram with the following command:
+Run the test program with the following command:
 java -cp VehicleInventory-1.0.jar TestAutomobile
