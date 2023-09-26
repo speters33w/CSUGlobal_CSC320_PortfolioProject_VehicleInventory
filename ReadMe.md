@@ -15,8 +15,8 @@ The tests described below may be run from /src/test/java/TestAutomobile.java
 
 The following files need to be present in the same directory as the jar to run this program:
 
-bak (directory)
-auto_brands_us.list
+bak (directory),
+auto_brands_us.list,
 autos.adb
 
 The program is best run on a terminal with ANSI support, use PowerShell 7 (Windows) or [almost] any Linux terminal.
