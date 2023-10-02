@@ -55,9 +55,16 @@ public class Automobile {
 
     /**
      * Default constructor for the automobile class.
-     * All parameters will be set to null.
+     * vin is set to null.
+     * All other parameters are set to "Undefined" or -1.
      */
     public Automobile() {
+        this.vin = null;
+        this.make = "Undefined";
+        this.model = "Undefined";
+        this.color = "Undefined";
+        this.year = Year.of(-1);
+        this.mileage = -1;
     }
 
     /**
