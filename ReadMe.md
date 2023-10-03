@@ -19,7 +19,7 @@ bak (directory),
 auto_brands_us.list,
 autos.adb
 
-The program is best run on a terminal with ANSI support, use PowerShell 7 (Windows) or [almost] any Linux terminal.
+The program is best run on a terminal with ANSI support, use [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.3) or [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) (Windows) or [almost] any Linux terminal.
 
 Run the program with the following command:
 `java -jar VehicleInventory-1.0.jar`
